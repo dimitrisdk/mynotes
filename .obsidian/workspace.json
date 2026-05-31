@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Poems.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Poems"
+              "title": "README"
             }
           }
         ],
@@ -220,12 +220,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "337c3a91b28b5a23",
+  "active": "b90d0276d255bc41",
   "lastOpenFiles": [
+    "Ayto einai alo ena test titlso.md",
     "IT-LOGS.md",
     "Poems.md",
     "README.md",
-    "Ayto einai alo ena test titlso.md",
     "TestSync.md.md",
     "Untitled.canvas"
   ]
