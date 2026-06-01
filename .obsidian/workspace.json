@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Poems.md",
+                "file": "Recipes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Poems"
+              "title": "Recipes"
             }
           }
         ],
@@ -222,11 +222,16 @@
   },
   "active": "337c3a91b28b5a23",
   "lastOpenFiles": [
+    "Poems.md",
+    "Gymnastics.md",
     "Ayto einai alo ena test titlso.md",
+    "Wellness.md",
+    "Strategy.md",
+    "Reminders.md",
+    "Recipes.md",
+    "TestSync.md.md",
     "IT-LOGS.md",
     "README.md",
-    "Poems.md",
-    "TestSync.md.md",
     "Untitled.canvas"
   ]
 }
