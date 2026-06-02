@@ -88,6 +88,14 @@ If a manual note appears to request a structured correction, the sync process mu
 - Remaining: 1255 kcal, 63g protein.
 <!-- wellness:daily:2026-06-02:end -->
 
+<!-- wellness:source:mcp:training:2026-06-02:start -->
+- Event type: training
+- Daily key: 2026-06-02
+- Source: dashboard / mcp training summary
+- Activities: yoga, bjj
+- Status: active
+<!-- wellness:source:mcp:training:2026-06-02:end -->
+
 <!-- wellness:source:mcp:food:1:start -->
 - Event type: food
 - Daily key: 2026-06-02
