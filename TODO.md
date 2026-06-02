@@ -14,5 +14,5 @@
 - [ ] Επίσκεψη σε γιατρό για συνταγογράφηση Farpo KOMO 💊
 
 ## 🤖 Executive Team — Telegram Bots
-- [ ] Φτιάξω 3 bots στο @BotFather (Petros, Ioudas, Samson)
-- [ ] Δώσω tokens στην Panagia να τα εγκαταστήσει
+- [x] Φτιάξω 3 bots στο @BotFather (Petros, Ioudas, Samson)
+- [x] Δώσω tokens στην Panagia να τα εγκαταστήσει

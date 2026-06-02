@@ -37,4 +37,32 @@
 *(να συμπληρωθεί)*
 
 ## Day 3 — Legs
-*(να συμπληρωθεί)*
+
+### 1. Warm-up / Activation
+- 5-8 λεπτά ελαφρύ ποδήλατο ή διάδρομο
+- Mobility: hips, ankles, hamstrings
+- 2 σετ activation: bodyweight squats + glute bridges
+
+### 2. Quads Focus
+- **Squat ή Leg Press:** 4 σετ x 6-10 επαναλήψεις
+  - *Βασική δύναμη και φόρτος για τετρακέφαλους*
+- **Bulgarian Split Squats:** 3 σετ x 8-10 επαναλήψεις ανά πόδι
+  - *Μονοποδική σταθερότητα, πολύ καλό carryover για BJJ*
+
+### 3. Hamstrings & Glutes
+- **Romanian Deadlift (RDL):** 3-4 σετ x 8-10 επαναλήψεις
+  - *Posterior chain, ισχυροί οπίσθιοι μηριαίοι*
+- **Leg Curl (lying ή seated):** 3 σετ x 10-15 επαναλήψεις
+- **Hip Thrust ή Glute Bridge:** 3 σετ x 8-12 επαναλήψεις
+
+### 4. Calves
+- **Standing Calf Raises:** 4 σετ x 12-20 επαναλήψεις
+- **Seated Calf Raises:** 3 σετ x 12-20 επαναλήψεις
+
+### 5. Optional Core Finisher
+- **Hanging Knee Raises ή Plank:** 3 σετ
+
+### Notes
+- Κράτα 1-2 επαναλήψεις στο reserve στα βασικά lifts
+- Έλεγξε την τεχνική πριν κυνηγήσεις κιλά
+- Αν έχεις BJJ την επόμενη μέρα, μην πας μέχρι αποτυχία στα RDL / split squats
