@@ -8,4 +8,5 @@ This file tracks all technical changes, installations, and maintenance performed
 | 2026-06-02 | Telegram bots για Petros & Samson | Completed | Petros: @aipetros_bot, Samson: @aisasmson_bot — .env & config.yaml updated |
 | 2026-06-02 | Systemd services για gateways | Completed | hermes-gateway-petros.service & hermes-gateway-samson.service — enabled on boot, auto-restart |
 | 2026-06-02 | Πρωινό cron TODO tasks | Completed | Κάθε μέρα 09:00 Ελλάδας (06:00 UTC) — στέλνει τα TODO tasks από το vault |
+| 2026-06-02 | Πρωινό news brief | Completed | Κάθε μέρα 10:00 Ελλάδας (07:00 UTC) — στέλνει Greece/tech/AI/Hermes news με links |
 | 2026-06-02 09:48 UTC | Model update σε όλα τα Hermes profiles | Completed | Default, Panagia, Petros, Ioudas, Samson σε model.default=gpt-5.5 και provider=openai-codex. OpenAI Codex auth διαθέσιμο σε όλα, smoke tests OK, gateways Panagia/Petros/Samson restarted. Default profile πήρε model.context_length=65536. |
