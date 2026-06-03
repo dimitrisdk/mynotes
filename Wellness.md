@@ -79,40 +79,22 @@ If a manual note appears to request a structured correction, the sync process mu
 
 ## Dashboard projection
 
-### 2026-06-02
+### 2026-06-03
 
-<!-- wellness:daily:2026-06-02:start -->
-- Training: yoga, bjj.
-- Food totals: 1145 kcal, 117g protein, 60g carbs, 46g fat.
+<!-- wellness:daily:2026-06-03:start -->
+- Training: none.
+- Food totals: 0 kcal, 0g protein, 0g carbs, 0g fat.
 - Goals: 2400 kcal, 180g protein.
-- Remaining: 1255 kcal, 63g protein.
-<!-- wellness:daily:2026-06-02:end -->
+- Remaining: 2400 kcal, 180g protein.
+<!-- wellness:daily:2026-06-03:end -->
 
-<!-- wellness:source:mcp:training:2026-06-02:start -->
+<!-- wellness:source:mcp:training:2026-06-03:start -->
 - Event type: training
-- Daily key: 2026-06-02
+- Daily key: 2026-06-03
 - Source: dashboard / mcp training summary
-- Activities: yoga, bjj
+- Activities: none
 - Status: active
-<!-- wellness:source:mcp:training:2026-06-02:end -->
-
-<!-- wellness:source:mcp:food:1:start -->
-- Event type: food
-- Daily key: 2026-06-02
-- Source: dashboard / mcp food id 1
-- Description: 450g chicken biftekia + salad + 1 pita
-- Macros: 995 kcal, 102g protein, 48g carbs, 41g fat
-- Status: active
-<!-- wellness:source:mcp:food:1:end -->
-
-<!-- wellness:source:mcp:food:2:start -->
-- Event type: food
-- Daily key: 2026-06-02
-- Source: dashboard / mcp food id 2
-- Description: half a Ninja Creami protein ice cream, homemade chocolate
-- Macros: 150 kcal, 15g protein, 12g carbs, 5g fat
-- Status: active
-<!-- wellness:source:mcp:food:2:end -->
+<!-- wellness:source:mcp:training:2026-06-03:end -->
 
 ## Manual notes
 
