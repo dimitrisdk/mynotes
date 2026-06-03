@@ -83,10 +83,19 @@ If a manual note appears to request a structured correction, the sync process mu
 
 <!-- wellness:daily:2026-06-03:start -->
 - Training: none.
-- Food totals: 0 kcal, 0g protein, 0g carbs, 0g fat.
+- Food totals: 635 kcal, 43g protein, 35g carbs, 36g fat.
 - Goals: 2400 kcal, 180g protein.
-- Remaining: 2400 kcal, 180g protein.
+- Remaining: 1765 kcal, 137g protein.
 <!-- wellness:daily:2026-06-03:end -->
+
+<!-- wellness:source:mcp:food:2026-06-03:start -->
+- Event type: food
+- Daily key: 2026-06-03
+- Source: dashboard / mcp meal log
+- Items: omelete me 4 auga kai cottage, 1 agouraki, ntomata, ligo sauce me giaourti, ladi, moustarda, sriratsa, kai misi araviki pita
+- Totals: 635 kcal, 43g protein, 35g carbs, 36g fat
+- Status: active
+<!-- wellness:source:mcp:food:2026-06-03:end -->
 
 <!-- wellness:source:mcp:training:2026-06-03:start -->
 - Event type: training

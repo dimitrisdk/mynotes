@@ -7,6 +7,7 @@
 
 ## 💰 Οικονομικά
 - [ ] Τράβηγμα λεφτών από Mintos
+- [ ] 2027-06-03: Google One / Google Drive 200GB renewal review — last paid €29.99 on 2026-06-03; decide renew/cancel.
 
 ## 🏥 Ιατρικά ραντεβού
 - [ ] Κλείσιμο ραντεβού με **γαστρεντερολόγο**
