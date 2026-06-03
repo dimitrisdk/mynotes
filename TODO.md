@@ -23,3 +23,8 @@
 - [ ] Samson ↔ Dashboard sync: όταν γράφει Wellness.md να ενημερώνεται και το dashboard
 - [ ] Ενιαίο source of truth Obsidian ↔ dashboard για fitness/food/training
 - [ ] Σταδιακή σύνδεση έξτρα PA permissions/integrations όπου χρειάζεται
+- [ ] Προσθήκη νέου dashboard tab **Researches** που διαβάζει `RESEARCH-LOG.md` + `Research/` notes και δείχνει real research cards
+- [ ] Dashboard Researches MVP: σύνδεση πρώτης έρευνας `[[Research/2026-06-03-top-github-repos-build-integration]]`
+- [ ] GitHub repo integration pilot: Playwright smoke tests για dashboard + Researches tab
+- [ ] GitHub repo integration pilot: Langfuse tracing σε ένα agent workflow πριν εμφανιστούν usage/token metrics
+- [ ] Firecrawl-backed research workflow hardening για Solomon, με αποθήκευση sources στα Obsidian research notes

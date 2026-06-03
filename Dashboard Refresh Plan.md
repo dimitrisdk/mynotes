@@ -61,12 +61,20 @@ Make the dashboard feel current and useful from the first screen, without overbu
    - show daily/weekly usage only if data is real
    - otherwise show “usage source not available yet” and document next step
 
+10. **Researches**
+   - new dashboard tab/section requested by Dimitris on 2026-06-03
+   - read from `/root/Documents/ObsidianVault/RESEARCH-LOG.md` and `Research/` notes
+   - show latest research cards: date, topic, status, linked Obsidian note, source count/tags if available
+   - first linked research: `[[Research/2026-06-03-top-github-repos-build-integration]]`
+   - no fake research cards; use markdown-backed real entries until API parser exists
+
 ## Shortcuts to add
 
 - Money
 - Wellness
 - Kanban
 - Obsidian TODO / vault
+- Researches
 - Home Assistant
 - Home Assistant All Off (only if safe/API-supported)
 - Telegram agents: Panagia, Petros, Samson, Ioudas, Solomon
