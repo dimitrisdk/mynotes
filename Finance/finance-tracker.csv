@@ -2,3 +2,4 @@ date,month,description,amount,currency,type,category_or_asset,account,notes,sour
 2026-06-03,2026-06,Protein powder order,99.90,EUR,Expense,Wellness / Supplements,Card / bank app unknown,Initial tracked expense; source was June wallet screenshot,Wallet screenshot / pending
 2026-06-03,2026-06,ETF investment contribution,1300.00,EUR,Investment,ETF Investment,Broker unknown,Initial tracked investment; specific ETF/account not yet confirmed,Manual note from user / manual
 2026-06-03,2026-06,GOOGLE*GOOGLE ONE NL,29.99,EUR,Expense,Software / Cloud subscription,Eurobank card ending 6295,Google One annual renewal/expiry reminder set for 2027-06-03,Eurobank notification / recorded
+2026-06-03,2026-06,Souvlaki,7.30,EUR,Expense,Food / Souvlaki,Unknown,Manual user entry: 7.30 se souvlakia,Manual / recorded
