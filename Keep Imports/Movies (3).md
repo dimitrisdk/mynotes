@@ -1,0 +1,25 @@
+#Keep/Colour/RED 
+
+- [ ] H leopardali tou xionou (by antonis)
+- [ ] To dentro me ta leuka anthi
+- [ ] Fast food nation
+- [ ] The night of
+- [ ] Brit marlin
+- [ ] Pinki blinders
+- [ ] Dont breath 
+- [ ] Tacones Lejanos
+- [ ] Best offer
+- [ ] American gods
+- [ ] Big litle eye
+- [ ] 12 Monkeys series
+- [ ] Vertigo movie
+- [ ] To paidi m t kokkink baloni
+- [ ] To treno tou bousan
+- [ ] All of us are dead
+- [ ] Σήκωσε τα κόκκινα φανάρια 
+- [ ] Dr stranglelove
+- [ ] Nightcrawler 
+- [ ] Mamma roma
+- [X] Black mirror 
+- [X] Westworld
+- [X] Mr fantastic

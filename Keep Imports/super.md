@@ -1,0 +1,52 @@
+#Keep/Colour/BROWN #Keep/Archived 
+
+- [ ] xarti kouzinas 
+- [ ] Χαρτοπετσέτα 
+- [ ] Μπανάνες 
+- [X] Giaourti
+- [X] Banan
+- [X] psomi tost
+- [X] Salata
+- [X] auga
+- [X] Coke
+- [X] meli
+- [X] salaata
+- [X] bares dimitriakon
+- [X] carti kouzinas
+- [X] vazelini
+- [X] gazaki?
+- [X] autia batoneyes
+- [X] Xidi
+- [X] omous xirous karpous
+- [X] Sakata
+- [X] Giaurti
+- [X] Gala
+- [X] auga
+- [X] gala
+- [X] dimitriaka
+- [X] tsai
+- [X] piperia
+- [X] kafe 
+- [X] Μπύρα 
+- [X] bires
+- [X] psomakia
+- [X] krasi
+- [X] gala
+- [X] xirafakia
+- [X] kafes
+- [X] auga
+- [X] sidagi diafora
+- [X] tuboflo
+- [X] Σφουγγάρι 
+- [X] Αρομα τουαλέτα 
+- [X] tabasko
+- [X] RabSko
+- [X] Balsam
+- [X] sampoo
+- [X] samphoo xeria
+- [X] baby
+- [X] kanenas krasi
+- [X] anaptira
+- [X] Ododokrema
+- [X] xartomadila 
+- [X] kounoupia

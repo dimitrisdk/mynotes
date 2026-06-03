@@ -1,0 +1,21 @@
+#Keep/Colour/DEFAULT #Keep/Archived 
+
+- [ ] Pisistratos
+- [ ] Themistoklio toixos
+- [ ] Theatro tu dionisou
+- [ ] Pausanias apteros niki
+- [ ] 3 kosmoi nekron zontanon theon
+- [ ] Agalma agripa
+- [ ] Erixthionas
+- [ ] Erextheas
+- [ ] Autoxthones
+- [ ] Loubarda
+- [ ] Xoano
+- [ ] Mikinaiki krinoi
+- [ ] Anatiliki genisi athinas
+- [ ] Amazonomaxia troomaxia
+- [ ] Xriselefadino agalma athinas
+- [ ] Athina varvakiou
+- [ ] Morozini veneton
+- [ ] Gouras androutso akropoli
+- [X] Propilea mnisiklispp
