@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hermes Ioudas//Finance Reminders//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:google-one-renewal-2027-06-03@ioudas.hermes
+DTSTAMP:20260603T102306Z
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270604
+SUMMARY:Google One subscription renewal/expiry
+DESCRIPTION:GOOGLE*GOOGLE ONE NL. Last paid €29.99 on 2026-06-03 via Eurobank card ending 6295. Review whether to renew or cancel.
+END:VEVENT
+END:VCALENDAR
