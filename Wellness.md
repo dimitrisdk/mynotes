@@ -82,7 +82,7 @@ If a manual note appears to request a structured correction, the sync process mu
 ### 2026-06-03
 
 <!-- wellness:daily:2026-06-03:start -->
-- Training: none.
+- Training: yoga.
 - Food totals: 2495 kcal, 119g protein, 213g carbs, 123g fat.
 - Goals: 2400 kcal, 180g protein.
 - Remaining: -95 kcal, 61g protein.
@@ -119,7 +119,7 @@ If a manual note appears to request a structured correction, the sync process mu
 - Event type: training
 - Daily key: 2026-06-03
 - Source: dashboard / mcp training summary
-- Activities: none
+- Activities: yoga
 - Status: active
 <!-- wellness:source:mcp:training:2026-06-03:end -->
 
