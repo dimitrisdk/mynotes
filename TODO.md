@@ -18,6 +18,9 @@
 - [x] Φτιάξω 3 bots στο @BotFather (Petros, Ioudas, Samson)
 - [x] Δώσω tokens στην Panagia να τα εγκαταστήσει
 
+## 🏠 Home Assistant
+- [ ] 2026-06-05: Εξέταση automation — όταν μπαίνω με το κινητό στο Wi‑Fi, να ανάβουν συγκεκριμένα φώτα.
+
 ## 🧰 Dashboard / Agent Infrastructure
 - [ ] Προσθήκη dashboard delete/update tools για meals/training entries
 - [ ] Macro auto-estimator να χρησιμοποιεί υπάρχον working provider αντί για Anthropic-only
