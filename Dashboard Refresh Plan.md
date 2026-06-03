@@ -74,6 +74,20 @@ Make the dashboard feel current and useful from the first screen, without overbu
 - GitHub
 - Backup/system status
 
+## Home Assistant embed add-on
+
+- Try to add a Home Assistant route/card inside Hermes Dashboard.
+- Preferred MVP: iframe/embed of a HA dashboard/panel if HA headers/auth allow it.
+- Fallback if HA blocks embedding: open HA in a new tab and show safe Hermes-native quick cards/actions such as All Off and key device status via backend API.
+- Known HA host from setup: `129.121.88.157`; Petros must verify actual reachable URL/port before coding.
+- Never expose HA auth tokens or secrets in the frontend bundle.
+
+## Branding add-on
+
+- Add a proper dashboard favicon.
+- Visual direction: dark/teal Hermes-style icon, simple and readable in browser tab.
+- Ensure `index.html` references it and browser verification confirms it appears.
+
 ## MVP non-goals
 
 - No bank integrations.
@@ -81,7 +95,10 @@ Make the dashboard feel current and useful from the first screen, without overbu
 - No fake article images.
 - No fake token counts.
 - No broad design-system rewrite.
+- No unsafe public exposure of Home Assistant.
+- No frontend secrets.
 
 ## Kanban
 
-Created task: `t_4645b3d4` — Dashboard refresh MVP: overview, agents, news images, wellness section, shortcuts.
+- Created task: `t_4645b3d4` — Dashboard refresh MVP: overview, agents, news images, wellness section, shortcuts.
+- Created task: `t_93e75840` — Dashboard refresh add-ons: embedded Home Assistant and favicon.
