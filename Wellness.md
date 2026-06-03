@@ -83,9 +83,9 @@ If a manual note appears to request a structured correction, the sync process mu
 
 <!-- wellness:daily:2026-06-03:start -->
 - Training: none.
-- Food totals: 635 kcal, 43g protein, 35g carbs, 36g fat.
+- Food totals: 995 kcal, 49g protein, 85g carbs, 50g fat.
 - Goals: 2400 kcal, 180g protein.
-- Remaining: 1765 kcal, 137g protein.
+- Remaining: 1405 kcal, 131g protein.
 <!-- wellness:daily:2026-06-03:end -->
 
 <!-- wellness:source:mcp:food:2026-06-03:start -->
@@ -96,6 +96,15 @@ If a manual note appears to request a structured correction, the sync process mu
 - Totals: 635 kcal, 43g protein, 35g carbs, 36g fat
 - Status: active
 <!-- wellness:source:mcp:food:2026-06-03:end -->
+
+<!-- wellness:source:mcp:food:2026-06-03:snack-15:start -->
+- Event type: food
+- Daily key: 2026-06-03
+- Source: dashboard / mcp meal log
+- Items: ena bowl pagoto xiropito pagoto anana
+- Totals: 360 kcal, 6g protein, 50g carbs, 14g fat
+- Status: active
+<!-- wellness:source:mcp:food:2026-06-03:snack-15:end -->
 
 <!-- wellness:source:mcp:training:2026-06-03:start -->
 - Event type: training
