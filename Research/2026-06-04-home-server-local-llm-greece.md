@@ -156,6 +156,15 @@ Eurostat/TradingEconomics search result: Greece medium household electricity pri
 - M4 24GB local model report: https://jola.dev/posts/running-local-models-on-m4
 - Greece household electricity search result / Eurostat via TradingEconomics: https://tradingeconomics.com/greece/electricity-prices-medium-size-households-eurostat-data.html
 
+## Cost snapshot / αγορά
+
+Checked 2026-06-04:
+- **Beelink SER8 8845HS**: official result shows **$799** base/listed page; target buy price for 64GB delivered EU/Greece should be **~€750–€900** depending checkout/VAT/sale. 32GB often cheaper, but for LLM prefer 64GB.
+- **Minisforum MS-01**: Minisforum EU page captured **€959** sale for configured unit; US page/search shows lower barebones/US options but EU landed price is the relevant one.
+- **Mac mini M4 24GB/512GB**: Skroutz captured **€1,239**.
+- **RTX desktop route**: Greek ready desktops with RTX 4060 Ti appear roughly **€1,800–€2,200+**; better value would be custom/used GPU build, not branded ready PC.
+- **Electricity yearly estimate**: mini PC 25–40W average ≈ **€48–€105/year**; Mac mini ~20W ≈ **€39–€53/year**; RTX desktop 80–120W average ≈ **€154–€315/year**, assuming €0.22–€0.30/kWh.
+
 ## Τι σημαίνει για τον Δημήτρη
 
 Η πιο λογική αγορά σήμερα είναι ένα **64GB Ryzen 8845HS mini PC** αντί για Mac ή MS-01, εκτός αν ο Δημήτρης θέλει κυρίως homelab/networking. Θα αντικαταστήσει φθηνά VPS για προσωπικά services και θα τρέχει local LLM αρκετά καλά για ιδιωτικό assistant/coding βοηθό, αλλά όχι στο επίπεδο πληρωμένων frontier APIs. Για “ένα κουτί για όλα”, το sweet spot είναι **Beelink SER8 64GB**· για “σοβαρό serveraki”, **MS-01**· για “καλύτερο local LLM feel”, **Mac mini M4 αλλά ακριβό**.
