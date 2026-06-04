@@ -11,3 +11,4 @@ This file tracks important research findings, briefs, and knowledge-scouting wor
 | 2026-06-03 10:24 UTC | Top GitHub repos για build integration | Completed | Ranked integration note: [[Research/2026-06-03-top-github-repos-build-integration]] |
 | 2026-06-03 13:39 UTC | Dashboard Researches tab + Petros repo tasks | Completed | Implemented live dashboard Researches tab backed by Obsidian research log and created Petros follow-up tasks for Langfuse, Firecrawl, Playwright, and QA handoff; IT details in `IT-LOGS.md`. |
 | 2026-06-03 13:44 UTC | Firecrawl workflow smoke test | Draft | Firecrawl source extraction: [[Research/2026-06-03-firecrawl-workflow-smoke-test]]; sources: 1; tags: #firecrawl, #workflow |
+| 2026-06-04 09:44 UTC | Home server / local LLM options for Greece | Completed | Ranked buying research: [[Research/2026-06-04-home-server-local-llm-greece]]; sources: 12; tags: #homelab, #local-llm, #hardware, #greece |
