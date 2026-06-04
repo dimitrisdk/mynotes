@@ -126,8 +126,17 @@ If a manual note appears to request a structured correction, the sync process mu
 ### 2026-06-04
 
 <!-- wellness:daily:2026-06-04:start -->
+- Training: gym (push day).
 - Weight: 81.8kg.
 <!-- wellness:daily:2026-06-04:end -->
+
+<!-- wellness:source:mcp:training:11:start -->
+- Event type: training
+- Daily key: 2026-06-04
+- Source: dashboard / mcp training log
+- Activities: gym (push day)
+- Status: active
+<!-- wellness:source:mcp:training:11:end -->
 
 <!-- wellness:source:mcp:weight:1:start -->
 - Event type: weight
@@ -138,6 +147,7 @@ If a manual note appears to request a structured correction, the sync process mu
 <!-- wellness:source:mcp:weight:1:end -->
 
 ## Manual notes
+
 
 Manual notes below are preserved by sync and are not canonical structured records unless explicitly entered into the dashboard.
 

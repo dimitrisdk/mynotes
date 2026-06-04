@@ -34,7 +34,37 @@
 ---
 
 ## Day 1 — Push
-*(να συμπληρωθεί)*
+
+### 1. Warm-up / Activation
+- 5-8 λεπτά ελαφρύ ποδήλατο ή διάδρομο
+- Shoulder mobility: circles, band pull-aparts, scapular push-ups
+- 2 ελαφριά σετ πιέσεων για προθέρμανση
+
+### 2. Chest Focus
+- **Bench Press ή Dumbbell Bench Press:** 4 σετ x 6-10 επαναλήψεις
+  - *Κύρια άσκηση δύναμης για στήθος*
+- **Incline Dumbbell Press:** 3 σετ x 8-12 επαναλήψεις
+  - *Πάνω στήθος και καλύτερο carryover για αισθητική*
+- **Cable Flyes ή Pec Deck:** 3 σετ x 12-15 επαναλήψεις
+  - *Έμφαση στη διάταση και στο squeeze*
+
+### 3. Shoulders
+- **Overhead Press ή Machine Shoulder Press:** 3 σετ x 6-10 επαναλήψεις
+  - *Δύναμη σε ώμους χωρίς υπερβολικό volume*
+- **Lateral Raises:** 4 σετ x 12-20 επαναλήψεις
+  - *Πλάτος ώμων και καλή απομόνωση*
+
+### 4. Triceps
+- **Close-Grip Bench Press ή Dips:** 3 σετ x 6-10 επαναλήψεις
+- **Cable Pushdowns:** 3 σετ x 10-15 επαναλήψεις
+- **Overhead Triceps Extension:** 2-3 σετ x 12-15 επαναλήψεις
+  - *Χτυπάει τη μακριά κεφαλή του τρικεφάλου*
+
+### Notes
+- Κράτα 1-2 επαναλήψεις στο reserve στα βασικά lifts
+- Μην κυνηγάς αποτυχία σε κάθε σετ, ειδικά αν έχεις και BJJ κοντά
+- Προτίμησε καθαρή τεχνική και σταθερή πρόοδο στα κιλά
+
 
 ## Day 3 — Legs
 
