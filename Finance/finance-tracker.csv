@@ -5,3 +5,5 @@ date,month,description,amount,currency,type,category_or_asset,account,notes,sour
 2026-06-03,2026-06,Souvlaki,7.30,EUR,Expense,Food / Souvlaki,Unknown,Manual user entry: 7.30 se souvlakia,Manual / recorded
 2026-06-04,2026-06,Skroutz / Bazaarshoes - Birkenstock Arizona sandals,89.00,EUR,Expense,Clothing / Footwear,Card ending 3964,Order 260604-7135706; delivery expected by 2026-06-08 at Skroutz Point Lidl Peristeri; size 42 stone regular fit,Skroutz order / in processing
 2026-06-04,2026-06,Skroutz / Stollas - Ernie Ball Regular Slinky 10-46 strings,17.70,EUR,Expense,Music / Instrument supplies,Card ending 3964,Order 260604-3360903; 3 sets x 5.90 EUR; delivery expected by 2026-06-08 at Skroutz Point Lidl Peristeri,Skroutz order / in processing
+2026-06-04,2026-06,PEANUTS EGALEO,13.32,EUR,Expense,Food / Snacks,payzy Visa Debit Virtual,Google Wallet notification at 15:03,Google Wallet / recorded
+2026-06-04,2026-06,AB_AIGALEO,57.13,EUR,Expense,Groceries / Supermarket,payzy Visa Debit Virtual,Google Wallet notification at 15:03,Google Wallet / recorded
