@@ -26,19 +26,19 @@ Reviewed current markdown notes in `/root/Documents/ObsidianVault` to identify u
 5. `Strategy.md` → either merge into `STRATEGY-LOG.md` / finance tracker or delete because it is mostly empty.
 6. Short research stubs in `Research/` should be merged into their full reports or deleted if they only point elsewhere.
 
-## Safe deletion candidates
-- `Ayto einai alo ena test titlso.md` — test note only.
-- `TestSync.md.md` — test sync note only.
-- `Αυτόματο-Αντίγραφο-Ασφαλείας.md` — old one-off backup note; backup activity now lives in `IT-LOGS.md` and git history.
-- `Research/do-research-on-agentic-os-2026-06-02-08-42.md` — stub only; no substantive content.
-- `Research/what-is-the-model-context-protocol-mcp-in-one-paragraph-2026-06-02-07-57.md` — mostly pointer/summary; can merge into `MCP-Research.md` then delete.
-- `Strategy.md` — mostly empty scaffold; can delete after checking no desired active projects are hidden there.
+## Cleanup executed — 2026-06-04
+- Deleted 152 imported Google Keep notes from `Keep Imports/` whose first line contained `#Keep/Archived`.
+- Deleted 3 clearly stale/empty notes after review:
+  - `Strategy.md` — empty Ioudas scaffold superseded by `STRATEGY-LOG.md` / finance tracker.
+  - `Keep Imports/My shopping list.md` — empty Keep import shell.
+  - `Keep Imports/shopping.md` — old generic shopping/test checklist.
+- Deletion manifest/log: `Agent Logs/obsidian-cleanup-2026-06-04.md`.
 
-## Suggested cleanup order
+## Previously listed deletion candidates now resolved
+- `Ayto einai alo ena test titlso.md`, `TestSync.md.md`, `Αυτόματο-Αντίγραφο-Ασφαλείας.md`, and two old `Research/` stubs were already absent when rechecked on 2026-06-04.
+
+## Suggested next cleanup order
 1. Merge `Ποιήματα.md` into `Poems.md`.
-2. Merge `Reminders.md` actionable items into `TODO.md`.
-3. Delete obvious test notes.
-4. Merge/delete research stubs.
-5. Optionally reorganize Wellness/Recipes/Training into folders.
-
-No destructive changes have been made yet.
+2. Merge `Reminders.md` actionable items into `TODO.md`; the Google One / Drive renewal is now also in Calendar, so keep only if Obsidian reminder redundancy is wanted.
+3. Review remaining 42 non-archived `Keep Imports/` notes manually/category-wise before deleting; several contain useful recipes, poems, finance/product ideas, medical notes, hidden food spots, or guitar notes.
+4. Optionally reorganize Wellness/Recipes/Training into folders.

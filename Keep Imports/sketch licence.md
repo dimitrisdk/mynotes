@@ -1,3 +1,0 @@
-#Keep/Colour/DEFAULT #Keep/Archived 
-
-SK3-4416-0899-3224-3893-0043
