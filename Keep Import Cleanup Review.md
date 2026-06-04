@@ -40,5 +40,5 @@ Reviewed current markdown notes in `/root/Documents/ObsidianVault` to identify u
 ## Suggested next cleanup order
 1. Merge `Ποιήματα.md` into `Poems.md`.
 2. Merge `Reminders.md` actionable items into `TODO.md`; the Google One / Drive renewal is now also in Calendar, so keep only if Obsidian reminder redundancy is wanted.
-3. Review remaining 42 non-archived `Keep Imports/` notes manually/category-wise before deleting; several contain useful recipes, poems, finance/product ideas, medical notes, hidden food spots, or guitar notes.
+3. Keep remaining 42 non-archived `Keep Imports/` notes in these user-approved categories: recipes/meal prep, poems, finance/ideas, medical notes, guitar notes, and hidden food spots. Do not delete these categories without explicit future approval.
 4. Optionally reorganize Wellness/Recipes/Training into folders.
