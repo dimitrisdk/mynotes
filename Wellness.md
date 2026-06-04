@@ -123,6 +123,20 @@ If a manual note appears to request a structured correction, the sync process mu
 - Status: active
 <!-- wellness:source:mcp:training:2026-06-03:end -->
 
+### 2026-06-04
+
+<!-- wellness:daily:2026-06-04:start -->
+- Weight: 81.8kg.
+<!-- wellness:daily:2026-06-04:end -->
+
+<!-- wellness:source:mcp:weight:1:start -->
+- Event type: weight
+- Daily key: 2026-06-04
+- Source: dashboard / mcp weight log
+- Weight: 81.8kg
+- Status: active
+<!-- wellness:source:mcp:weight:1:end -->
+
 ## Manual notes
 
 Manual notes below are preserved by sync and are not canonical structured records unless explicitly entered into the dashboard.
