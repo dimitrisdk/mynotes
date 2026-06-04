@@ -106,7 +106,52 @@ Make the dashboard feel current and useful from the first screen, without overbu
 - No unsafe public exposure of Home Assistant.
 - No frontend secrets.
 
+## Purchases / Orders kanban add-on
+
+Requested by Dimitris on 2026-06-04: add a dashboard area to track purchases/orders by stage.
+
+### Product idea
+
+A lean “Αγορές / Παραγγελίες” board inside the dashboard, separate from the agent-work Kanban, focused on user purchases.
+
+### Suggested stages
+
+- **To buy** — shopping ideas / pending purchases from `TODO.md`.
+- **Ordered / processing** — order placed, not yet shipped.
+- **Shipped** — courier/tracking active.
+- **Ready for pickup** — pickup point / locker / Skroutz Point.
+- **Delivered / picked up** — complete.
+- **Problem / return / refund** — failed delivery, return, refund, dispute.
+
+### Data model MVP
+
+Each order card should store:
+- title/product
+- merchant/vendor
+- order number
+- amount
+- payment method/status
+- order date
+- expected delivery/pickup date
+- pickup/delivery location
+- current stage
+- source links/notes: Gmail, Skroutz, manual, expense entry
+
+### Initial seed orders
+
+- Skroutz / Bazaarshoes — Birkenstock Arizona sandals — order `260604-7135706` — €89.00 — expected pickup by 2026-06-08 at Skroutz Point Lidl Περιστέρι — stage: Ordered / processing.
+- Skroutz / Stollas — Ernie Ball Regular Slinky 10-46 strings, 3 sets — order `260604-3360903` — €17.70 — expected pickup by 2026-06-08 at Skroutz Point Lidl Περιστέρι — stage: Ordered / processing.
+
+### Implementation approach
+
+- Add backend store/API for purchase/order entries, ideally reusing the dashboard SQLite pattern.
+- Add `/orders` or `/purchases` tab with kanban columns and compact dark/teal cards.
+- Add overview card: next pickup/delivery + counts by stage.
+- Feed from current manual entries first; later connect Gmail daily monitor to update order stages from Skroutz/courier/payment emails.
+- Keep money tracking separate but cross-link expense entries to order cards where possible.
+
 ## Kanban
 
 - Created task: `t_4645b3d4` — Dashboard refresh MVP: overview, agents, news images, wellness section, shortcuts.
 - Created task: `t_93e75840` — Dashboard refresh add-ons: embedded Home Assistant and favicon.
+- Created task via dashboard — Dashboard Purchases/Orders kanban MVP.

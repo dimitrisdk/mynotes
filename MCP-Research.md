@@ -64,3 +64,11 @@ David Soria Parra & Justin Spahr-Summers at Anthropic. Open-source (MIT/Apache 2
 - https://github.com/modelcontextprotocol
 - https://www.descope.com/learn/post/mcp
 - https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp
+
+---
+
+## Archived quick-capture note
+
+Imported/merged from `Research/what-is-the-model-context-protocol-mcp-in-one-paragraph-2026-06-02-07-57.md` during vault cleanup.
+
+Σύνοψη: Δεν υπήρχε προηγούμενη γνώση για MCP στο vault. Το MCP είναι open-source standard της Anthropic που λειτουργεί σαν «USB-C για AI» — ενώνει LLMs με εξωτερικά tools/databases μέσω client-server αρχιτεκτονικής (JSON-RPC 2.0). Λύνει το N×M integration πρόβλημα. Το Hermes Agent το υποστηρίζει natively με native MCP client.

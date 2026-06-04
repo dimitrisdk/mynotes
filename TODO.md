@@ -1,21 +1,23 @@
 # 📋 Εκκρεμότητες — Προς διεκπεραίωση
 
 ## 🛍️ Ψώνια
-- [ ] Αγορά Brickstone παπούτσια
-- [ ] Αγορά σαγιονάρες
-- [ ] Αγορά χορδές για δικηθάρα 🎸
 
 ## 💰 Οικονομικά
 - [ ] Τράβηγμα λεφτών από Mintos
+- [ ] 2027-06-03: Google One / Google Drive 200GB renewal review — last paid €29.99 on 2026-06-03; decide renew/cancel.
 
 ## 🏥 Ιατρικά ραντεβού
 - [ ] Κλείσιμο ραντεβού με **γαστρεντερολόγο**
-- [ ] Κλείσιμο ραντεβού με **οφθαλμίατρο**
+- [ ] 2026-06-08 19:00: Ραντεβού με **οφθαλμίατρο** — Βλάχος Βασίλειος / BIO ORASIS EE, Εθνικής Αντιστάσεως 196, Περιστέρι, τηλ. 2121059049. Προστέθηκε στο Google Calendar.
 - [ ] Επίσκεψη σε γιατρό για συνταγογράφηση Farpo KOMO 💊
 
 ## 🤖 Executive Team — Telegram Bots
 - [x] Φτιάξω 3 bots στο @BotFather (Petros, Ioudas, Samson)
 - [x] Δώσω tokens στην Panagia να τα εγκαταστήσει
+
+## 🏠 Home Assistant
+- [ ] 2026-06-04: Βελτίωση HA Dashboard — Quick Actions, Rooms layout, Night Mode, μεγάλα mobile buttons, status cards για lights/switches/vacuum/security.
+- [ ] 2026-06-05: Εξέταση automation — όταν μπαίνω με το κινητό στο Wi‑Fi, να ανάβουν συγκεκριμένα φώτα.
 
 ## 🧰 Dashboard / Agent Infrastructure
 - [ ] Προσθήκη dashboard delete/update tools για meals/training entries

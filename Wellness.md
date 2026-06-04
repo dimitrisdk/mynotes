@@ -82,21 +82,72 @@ If a manual note appears to request a structured correction, the sync process mu
 ### 2026-06-03
 
 <!-- wellness:daily:2026-06-03:start -->
-- Training: none.
-- Food totals: 0 kcal, 0g protein, 0g carbs, 0g fat.
+- Training: yoga.
+- Food totals: 2495 kcal, 119g protein, 213g carbs, 123g fat.
 - Goals: 2400 kcal, 180g protein.
-- Remaining: 2400 kcal, 180g protein.
+- Remaining: -95 kcal, 61g protein.
 <!-- wellness:daily:2026-06-03:end -->
+
+<!-- wellness:source:mcp:food:2026-06-03:start -->
+- Event type: food
+- Daily key: 2026-06-03
+- Source: dashboard / mcp meal log
+- Items: omelete me 4 auga kai cottage, 1 agouraki, ntomata, ligo sauce me giaourti, ladi, moustarda, sriratsa, kai misi araviki pita
+- Totals: 635 kcal, 43g protein, 35g carbs, 36g fat
+- Status: active
+<!-- wellness:source:mcp:food:2026-06-03:end -->
+
+<!-- wellness:source:mcp:food:2026-06-03:snack-15:start -->
+- Event type: food
+- Daily key: 2026-06-03
+- Source: dashboard / mcp meal log
+- Items: ena bowl pagoto xiropito pagoto anana
+- Totals: 360 kcal, 6g protein, 50g carbs, 14g fat
+- Status: active
+<!-- wellness:source:mcp:food:2026-06-03:snack-15:end -->
+
+<!-- wellness:source:mcp:food:2026-06-03:meal-16:start -->
+- Event type: food
+- Daily key: 2026-06-03
+- Source: dashboard / mcp meal log
+- Items: 2 souvlakia: 1 gyro kotopoulo kai 1 gyro choirino, to ena me patates
+- Totals: 1500 kcal, 70g protein, 128g carbs, 73g fat
+- Status: active
+<!-- wellness:source:mcp:food:2026-06-03:meal-16:end -->
 
 <!-- wellness:source:mcp:training:2026-06-03:start -->
 - Event type: training
 - Daily key: 2026-06-03
 - Source: dashboard / mcp training summary
-- Activities: none
+- Activities: yoga
 - Status: active
 <!-- wellness:source:mcp:training:2026-06-03:end -->
 
+### 2026-06-04
+
+<!-- wellness:daily:2026-06-04:start -->
+- Training: gym (push day).
+- Weight: 81.8kg.
+<!-- wellness:daily:2026-06-04:end -->
+
+<!-- wellness:source:mcp:training:11:start -->
+- Event type: training
+- Daily key: 2026-06-04
+- Source: dashboard / mcp training log
+- Activities: gym (push day)
+- Status: active
+<!-- wellness:source:mcp:training:11:end -->
+
+<!-- wellness:source:mcp:weight:1:start -->
+- Event type: weight
+- Daily key: 2026-06-04
+- Source: dashboard / mcp weight log
+- Weight: 81.8kg
+- Status: active
+<!-- wellness:source:mcp:weight:1:end -->
+
 ## Manual notes
+
 
 Manual notes below are preserved by sync and are not canonical structured records unless explicitly entered into the dashboard.
 
