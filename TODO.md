@@ -16,6 +16,9 @@
 - [x] Φτιάξω 3 bots στο @BotFather (Petros, Ioudas, Samson)
 - [x] Δώσω tokens στην Panagia να τα εγκαταστήσει
 
+## 💳 Πληρωμές / Εξόφληση
+- [ ] ⏰ **Reminder** — Πληρωμή για μηχανή/συσκευή (kanban: t_rem_mixanaki) — *προσθέσε ημ/νία λήξης & ποσό/ληφθείς*
+
 ## 🏠 Home Assistant
 - [ ] 2026-06-04: Βελτίωση HA Dashboard — Quick Actions, Rooms layout, Night Mode, μεγάλα mobile buttons, status cards για lights/switches/vacuum/security.
 - [ ] 2026-06-05: Εξέταση automation — όταν μπαίνω με το κινητό στο Wi‑Fi, να ανάβουν συγκεκριμένα φώτα.
