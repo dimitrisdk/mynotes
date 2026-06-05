@@ -1,88 +1,54 @@
 ---
-title: Agent Logs Weekly Summary {{week}}
-week: {{week}}
-period_start: {{period_start}}
-period_end: {{period_end}}
-timezone: Europe/Athens
-status: draft
-created: {{created_utc}}
-created_by: {{created_by}}
-source_folder: Agent Logs/
-source_files:
-  - {{source_file_1}}
-agents:
-  - {{agent_name}}
-projects:
-  - {{project_name}}
-people: []
-tags:
-  - agent-logs
-  - weekly-summary
-  - obsidian
-raw_logs_retained: true
+title: Agent Logs Weekly Summary Template
+week_template: true
+status: template
+created: 2026-06-05
+created_by: Solomon
+raw_notes_retained: true
+source_policy: link-only-no-deletion
+tags: [agent-logs, weekly-summary, template]
 ---
 
 # Agent Logs Weekly Summary {{week}}
 
-## Executive summary
-- {{material_outcome_1}}
-- {{material_outcome_2}}
-- {{material_outcome_3}}
+## 1. Executive scan
+- Wins: {{top_win_1}}; {{top_win_2}}
+- Risks / watchouts: {{risk_or_none}}
+- Decisions needed: {{decision_1_or_none}}
+- Next 7 days: {{action_1}}, {{action_2}}, {{action_3}}
 
-## Agent activity by person
+## 2. Agent activity by person
 
 ### Panagia
-- {{summary_item}} — source: [[Agent Logs/Panagia]]{{optional_line_ref}}
+{{panagia_summary}} — source: [[../Panagia]]
 
 ### Solomon
-- {{summary_item}} — source: [[Agent Logs/...]]{{optional_line_ref}}
+{{solomon_summary}} — source: [[../../RESEARCH-LOG]] / [[../Solomon]]
 
 ### Petros
-- {{summary_item}}
-
-### Ioudas
-- {{summary_item}}
+{{petros_summary}} — source: [[../../IT-LOGS]] / [[../Petros]]
 
 ### Samson
-- {{summary_item}}
+{{samson_summary}} — source: [[../Samson]]
 
-## Project updates
+### Ioudas
+{{ioudas_summary}} — source: [[../Ioudas]]
 
-### [[Dashboard Refresh Plan]]
-- {{dashboard_update}}
+### Bezalel
+{{bezalel_summary}} — source: [[../Bezalel]]
 
-### [[TODO]]
-- {{todo_update}}
+## 3. Automations / integrations
+{{cron_or_gateway_update_or_none}}
 
-### [[RESEARCH-LOG]] / Research
-- {{research_update}}
+## 4. Preferences captured
+{{preferences_or_none}}
 
-### Other
-- {{other_project_update}}
+## 5. Operational issues
+- [ ] {{issue}} — owner: {{owner_or_unknown}}
 
-## Vault changes
-- Created: {{new_notes}}
-- Updated: {{changed_notes}}
-- Cleanup/audit logs: {{cleanup_logs}}
+## 6. Raw log coverage
+- Source files checked: {{files_checked}}
+- Gaps: {{gaps_or_none}}
 
-## Automations / cron / integrations
-- Active: {{active_automation}}
-- Removed/changed: {{changed_automation}}
-- Needs verification: {{verification_needed}}
-
-## Decisions and preferences captured
-- {{decision_or_preference}}
-
-## Open loops / follow-ups
-- [ ] {{follow_up}} — owner: {{owner_or_unknown}}
-
-## Source coverage
-- Period covered: {{period_start}} → {{period_end}} Europe/Athens
-- Source files inspected:
-  - [[Agent Logs/{{source_note}}]] — {{line_range_or_note}}
-- Gaps / files skipped:
-  - {{gap_or_none}}
-
-## Raw log retention
-- Raw logs were retained unchanged: yes.
-- No raw logs were deleted, merged, or rewritten during this summary pass.
+## 7. Raw-note retention statement
+Raw/source notes were retained unchanged. This weekly summary links to existing notes and does not assume deletion, consolidation, moving, or rewriting of source material.
