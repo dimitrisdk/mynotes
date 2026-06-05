@@ -175,3 +175,12 @@
 - Full reindex completed: 150 files, 1.6MB (128 Obsidian, 22 Betsson). Server tests 35/35 pass. Browser + Playwright first-click smoke passed with 0 console/page errors.
 
 - 2026-06-05 16:40 UTC | Agents MVP | COMPLETED | Implemented read-only Agents status screen in Hermes Dashboard showing all 6 profiles (Panagia, Petros, Ioudas, Samson, Solomon, Bezalel) with model/provider, gateway state, Telegram connectivity, and per-profile kanban task counts (running/ready/blocked/todo/triage/review/scheduled/done) plus latest 3 tasks. Backend: `/api/hermes/agents/status` on both Python dashboard (port 9119, `/usr/local/lib/hermes-agent/hermes_cli/web_server.py`) and Node.js dashboard (port 9120, `/opt/hermes-dashboard/server/src/routes/hermes.js`) — both read gateway_state.json, config.yaml, and kanban.db per profile. Frontend: `/agents` tab at `http://127.0.0.1:9120/agents` (Node.js dashboard) displays agent cards with live status badges, colored task count chips, and task rows ordered by status priority. Verified: both API endpoints return 6 agents with correct data structure; browser smoke test at `/agents` loaded all profiles with 0 JS console errors; auto-refresh every 15s via useFetch. No ports/firewall changes.
+
+## 2026-06-05 — All 5 MVPs complete
+- Orders MVP (t_00281b63): Gmail polling every 15m via cron ce81e4290a29, classifies Skroutz/Proteinmax/shipping/receipt/subscription emails, creates/updates orders in Kanban, proposes expenses
+- Agents MVP (t_ce3bb39e): /agents tab live showing all 6 profiles with model/provider, gateway state, Telegram, task counts by status, latest 3 tasks
+- Calendar MVP (t_e04a9e60): /calendar tab live with Today timeline + Upcoming (7 days) + By category, Athens timezone, food category keywords
+- Workspace MVP (t_14bff90a): /workspace live, 150 files indexed (128 Obsidian, 22 Betsson), search/filter/preview/download/copy path
+- Obsidian MVP (t_44860db0): Weekly summary generator script + cron job 4e4e5f60f573 (Mon 07:30 EEST), scans IT-LOGS/RESEARCH-LOG/STRATEGY-LOG/Wellness/TODO/Finance/Projects/Design/Agent Logs, writes Weekly Summaries/YYYY-WW.md, git commit
+
+Infrastructure status: all 5 MVP tasks marked done in Kanban.
