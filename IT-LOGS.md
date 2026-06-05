@@ -185,3 +185,10 @@
 - Obsidian MVP (t_44860db0): Weekly summary generator script + cron job 4e4e5f60f573 (Mon 07:30 EEST), scans IT-LOGS/RESEARCH-LOG/STRATEGY-LOG/Wellness/TODO/Finance/Projects/Design/Agent Logs, writes Weekly Summaries/YYYY-WW.md, git commit
 
 Infrastructure status: all 5 MVP tasks marked done in Kanban.
+
+## 2026-06-05 — Kanban CRUD UI
+- Added PATCH /api/kanban/:id (update status, assignee, priority, body, title) via direct DB write
+- Added DELETE /api/kanban/:id via direct DB write
+- Kanban UI: status dropdown (select) on each task card, handles onChange -> API call -> refresh
+- Verified: status change (todo→triage→ready→done), delete, auto-sync shows status changes
+- Completed_at timestamp set on 'done', cleared when moving away from done
