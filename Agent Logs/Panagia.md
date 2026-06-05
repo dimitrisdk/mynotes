@@ -10,3 +10,4 @@
 
 - 2026-06-04 23:11:33 UTC — Created one-shot reminder cron `49b4120be43f` for 2026-06-06 09:00 Europe/Athens: try AI model from https://youtu.be/zdgkOGH6Zt4.
 2026-06-05 10:12:08 EEST — Email digest: checked primary + dimitris.fb@gmail.com; notable emails found: 9.
+- 2026-06-05 19:02 EEST: Twice-daily Gmail digest checked primary + secondary mailboxes; notable emails found: 10.

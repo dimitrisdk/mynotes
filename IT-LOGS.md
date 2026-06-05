@@ -137,4 +137,41 @@
 ## 2026-06-05 — Workspace browser MVP shipped
 - Implemented `/workspace` MVP in `/opt/hermes-dashboard`: indexes only `/root/Documents/ObsidianVault` and `/root/Documents/Betsson-Wireframes`, supports markdown/images/PDF/SVG/HTML preview where browser-native, search/filter by filename/path/content preview/source/type, grid/list views, open/download/copy absolute path, and graceful missing-root status.
 - Removed agent-profile indexing from Workspace MVP scope, fixed `/api/assets` camelCase response for React, added `offset` pagination support, fixed preview route matching, rebuilt client, restarted `hermes-dashboard-minimal.service`, and reindexed 149 files (127 Obsidian, 22 Betsson).
+
+- 2026-06-05 15:55 UTC | Calendar MVP | Completed | Implemented read-only Google Calendar Today/Upcoming view in `/opt/hermes-dashboard`: reused existing Panagia OAuth token at `/root/.hermes/profiles/panagia/google_token.json` (Calendar scope), backend at `/api/calendar` and `/api/calendar/today` fetches today + 30 days, normalizes title/start/end/location/source calendar/category (medical/renewal/training/food/general) with Athens timezone (Europe/Athens). Frontend Calendar tab shows Today timeline, Upcoming (next 7 days grouped by date with Greek weekday names), and By category sections with proper empty/error/loading states. Added food category keywords (dinner/lunch/restaurant/cafe/δειπνο/εστιατορ/καφε etc.). Built client, restarted service, verified live at `http://100.107.122.62:9120/calendar` and API endpoints. No ports/firewall changes.
 - Verification: server `npm test` passed 28/28, client `npm run build` passed, live `/api/assets` smoke passed, browser smoke `/workspace` showed files with filters/list view and 0 JS console errors.
+
+## 2026-06-05 — Workspace MVP approved
+- Dimitris approved review-required handoff for t_14bff90a.
+- Marked Workspace MVP complete: /workspace live, 149 files indexed (127 Obsidian, 22 Betsson), tests/build/API/browser smoke passed.
+
+## 2026-06-05 — Blanket approval applied
+- Dimitris gave approval for all review-required tasks.
+- Completed t_4f17034a (Workspace asset schema/API: 32/32 tests pass, 10k benchmark <200ms).
+- Completed t_6594e8bc (Orders data model/store/API seeded with Skroutz purchases: 25/25 tests pass).
+- Noted t_e04a9e60 already completed: Calendar MVP read-only Today/Upcoming view live.
+- Remaining active MVPs: Orders polling, Agents status, Obsidian weekly summary.
+
+## 2026-06-05 — Kanban auto status updates
+- Updated Dashboard Kanban to poll /api/kanban every 5 seconds instead of 15.
+- Added auto-sync timestamp, recent status updates feed, and temporary highlight for task cards whose status changes.
+- Built client successfully and restarted hermes-dashboard-minimal.service; browser smoke verified auto-sync is visible and refreshes.
+
+## 2026-06-05 — Workspace asset preview components
+- Built scratch React/TypeScript asset preview component package for Kanban task t_f7a9094e at `/root/.hermes/kanban/workspaces/t_f7a9094e`.
+- Covers image/SVG/PDF/Markdown/text/audio/video plus unsupported/empty states, with MIME-keyed lazy registry and Storybook examples.
+- Verification: `npm test` 3/3 pass, `npm run build` pass, registry bundle 1.04KB gzip (<50KB), `npm run build-storybook` pass.
+
+## 2026-06-05 — Dashboard Assets tab shell
+- 2026-06-05 16:19 UTC | Dashboard Assets tab shell | AWAITING REVIEW | Added `/assets` tab to `/opt/hermes-dashboard` with sidebar navigation, breadcrumb, global search, type/source filters, grid/list toggle, keyboard-focusable virtualized asset results, first-page API loading from `/api/assets`, and horizontal-scroll mobile nav for 320px. Kept `/workspace` as compatibility alias to the new Assets UI. Validation: server `npm test` 35/35 passed; client `npm run build` passed; Playwright e2e 5/5 passed including 320px and 1440px Assets checks; live `/assets` browser smoke loaded 1417 files with 0 console errors, load event ~63ms and `/api/assets?limit=100` ~6ms. Code changes awaiting human review before Kanban completion.
+
+## 2026-06-05 — Workspace asset source ingestion
+- 2026-06-05 16:19 UTC | Asset index source sync | AWAITING REVIEW | Implemented scheduled ingestion in `/opt/hermes-dashboard`: ObsidianVault, Betsson-Wireframes, and expanded agent asset directories now upsert into the asset index with content-hash dedupe, startup/bootstrap sync, 15-minute incremental scans, and nightly full scan. Added regression tests and restarted the live dashboard process. Validation: server `npm test` passed 35/35, client `npm run build` passed, real full scan indexed 1694 scanned files/1329 unique assets in 382ms (<5min), incremental smoke indexed `t_7b91ce1e/asset-sync-smoke.md`, live API returned it under `source=agent`, and `/api/assets/stats` reports sources agent/betsson/obsidian with zero missing roots.
+
+- 2026-06-05 — Workspace first-load crash fix
+- Investigated Workspace first-click crash report. Found dashboard service had an orphan node process holding port 9120, causing systemd restart failures (EADDRINUSE) and intermittent first-load crashes.
+- Killed stale process and added systemd ExecStartPre port guard for hermes-dashboard-minimal.service.
+- Reduced Workspace asset index back to MVP sources only: ObsidianVault + Betsson-Wireframes; removed agent/profile/workspace roots from default scan to avoid heavy/noisy first load.
+- Full reindex completed: 150 files, 1.6MB (128 Obsidian, 22 Betsson). Server tests 35/35 pass. Browser + Playwright first-click smoke passed with 0 console/page errors.
+
+- 2026-06-05 16:40 UTC | Agents MVP | COMPLETED | Implemented read-only Agents status screen in Hermes Dashboard showing all 6 profiles (Panagia, Petros, Ioudas, Samson, Solomon, Bezalel) with model/provider, gateway state, Telegram connectivity, and per-profile kanban task counts (running/ready/blocked/todo/triage/review/scheduled/done) plus latest 3 tasks. Backend: `/api/hermes/agents/status` on both Python dashboard (port 9119, `/usr/local/lib/hermes-agent/hermes_cli/web_server.py`) and Node.js dashboard (port 9120, `/opt/hermes-dashboard/server/src/routes/hermes.js`) — both read gateway_state.json, config.yaml, and kanban.db per profile. Frontend: `/agents` tab at `http://127.0.0.1:9120/agents` (Node.js dashboard) displays agent cards with live status badges, colored task count chips, and task rows ordered by status priority. Verified: both API endpoints return 6 agents with correct data structure; browser smoke test at `/agents` loaded all profiles with 0 JS console errors; auto-refresh every 15s via useFetch. No ports/firewall changes.

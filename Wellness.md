@@ -159,3 +159,4 @@ Manual notes below are preserved by sync and are not canonical structured record
 - 2026-06-03 supplement/order note: Protein powder order placed: 2x Immortal Whey Protein 2kg bundle (total 4kg), flavors Chocolate Peanut Butter + Raspberry Cheesecake, total €99.90, status processing. Personal delivery/contact details intentionally not logged here.
 - 2026-06-04 note: BJJ session completed.
 - 2026-06-04 food note: omeleta me 4 auga, miso doxio cottage, kai vradino ena santoutsi vromiko me xirino, xoris patates.
+- 2026-06-05 food note: klasiki omeleta me salata, kai ena boll pagoto me gala kai skoni proteini.
