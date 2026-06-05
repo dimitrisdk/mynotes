@@ -157,3 +157,5 @@ Manual notes below are preserved by sync and are not canonical structured record
 - Day 2 - 2026-06-01 10:13: Started workout; weight 81.8kg; Lat Pulldown 52kg | DB Row 20kg | Pullover 18kg | Seated Row 45kg.
 - 2026-06-02 note: BJJ session completed; meals included chicken biftekia + salad + pita and half a Ninja Creami protein ice cream; good training day; no more food today; keep hydration high; latest tracked weight 81.8kg.
 - 2026-06-03 supplement/order note: Protein powder order placed: 2x Immortal Whey Protein 2kg bundle (total 4kg), flavors Chocolate Peanut Butter + Raspberry Cheesecake, total €99.90, status processing. Personal delivery/contact details intentionally not logged here.
+- 2026-06-04 note: BJJ session completed.
+- 2026-06-04 food note: omeleta me 4 auga, miso doxio cottage, kai vradino ena santoutsi vromiko me xirino, xoris patates.
