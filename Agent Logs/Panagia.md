@@ -1,13 +1,7 @@
-# Panagia Agent Log
+# Panagia Agent Logs
 
-## 2026-06-04
-- 06:00 UTC — Διάβασα το `TODO.md` και ετοίμασα ημερήσια αναφορά με τα unchecked tasks.
-- 07:00 UTC — Δημιούργησα το πρωινό brief στο `Briefs/morning-brief-2026-06-04.md`, με highlights, σημερινά σημεία προσοχής και 3 προτάσεις.
-
-- 2026-06-04 18:31:53 UTC — Obsidian cleanup preference confirmed: keep non-archived Keep Import categories recipes/meal prep, poems, finance/ideas, medical notes, guitar notes, hidden food spots. Created cron job `abe331335658` for Gmail digest twice daily at 06:00 and 16:00 UTC (~09:00 and 19:00 Athens during EEST), checking primary and secondary Gmail.
-
-- 2026-06-04 18:32:12 UTC — Removed old duplicate daily Gmail cron `8b1c0fc1a991`; active mail digest is `abe331335658` twice daily.
-
-- 2026-06-04 23:11:33 UTC — Created one-shot reminder cron `49b4120be43f` for 2026-06-06 09:00 Europe/Athens: try AI model from https://youtu.be/zdgkOGH6Zt4.
-2026-06-05 10:12:08 EEST — Email digest: checked primary + dimitris.fb@gmail.com; notable emails found: 9.
-- 2026-06-05 19:02 EEST: Twice-daily Gmail digest checked primary + secondary mailboxes; notable emails found: 10.
+## 2026-06-07 09:00 EEST — Email Digest Cron Run
+- Primary (kanioris.d@gmail.com): 18 unread in 7d, 3 in 1d — **6 notable** (1 action, 2 medical, 1 security, 1 financial, 1 promo)
+- Secondary (dimitris.fb@gmail.com): 18 unread in 7d, 3 in 1d — **7 notable** (1 appointment today, 1 payment receipt, 2 orders, 1 security, 1 job, 1 medical)
+- Total notable emails: 13
+- Categories: Σημαντικά/δράση: 4, Παραγγελίες/οικονομικά: 4, FYI: 5
