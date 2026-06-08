@@ -43,3 +43,4 @@ The backup completed and produced a usable archive despite the warnings. The siz
 **Πηγές:**
 - Backup script: /root/backup_script.sh
 - Backup file: /root/Documents/ObsidianVault/backups/obsidian_vault_20260608_113646.tar.gz
+[2026-06-08 11:57:32] Cleanup routine run: no files found for cleanup.
