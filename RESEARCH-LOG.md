@@ -36,4 +36,4 @@ This file tracks important research findings, briefs, and knowledge-scouting wor
 || 2026-06-05 19:52 UTC | Test search kanban task | Completed | Test kanban task `t_e5a90026` from dashboard search \\\"ρώτα τον Solomon\\\"; note: [[Research/2026-06-05-test-search-kanban]]; sources: 3; tags: #test, #hermes-agent, #dashboard, #kanban |
 || 2026-06-08 10:20 UTC | Weekly AI Update - June 8, 2026 | Completed | [[Research/2026-06-08-weekly-ai-update-solomon.md]]|||
 || 2026-06-08 10:34 UTC | Maintenance job | Completed | Performed routine maintenance: checked research log, updated skills list, and verified Obsidian vault integrity. |
-|| 2026-06-08 10:40 UTC | Test research for cron job | Completed | Test web search and extract for AI news bulletin board. |
+|| 2026-06-08 10:40 UTC | Test research for cron job | Completed | Test web search and extract for AI news bulletin board. ||| 2026-06-08 10:20 UTC | Weekly core domains summary for 2026-W23 | Completed | Created weekly summary note covering research activities June 1-7, 2026; logged to [[Weekly Summaries/2026-W23]]
