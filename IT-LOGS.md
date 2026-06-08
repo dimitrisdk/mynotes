@@ -1,9 +1,10 @@
 1|# IT Operations Log
 2|This file tracks all technical changes, installations, and maintenance performed by Petros.
 3|
-4|| Date | Task | Status | Notes |
-5|| :--- | :--- | :--- | :--- |
-6|| 2026-05-30 | Initial IT log setup | Completed | Petros activated |
+| Date | Task | Status | Notes |
+| :--- | :--- | :--- | :--- |
+| 2026-06-08 | Weekly core domains summary 2026-W23 | Completed | Generated summary for Mon-Sun 2026-06-01 to 2026-06-07 Europe/Athens; written to Weekly Summaries/2026-W23.md; committed locally (74ba2ad); push to GitHub pending (network timeout to github.com port 22/443) |
+| 2026-05-30 | Initial IT log setup | Completed | Petros activated |
 7|| 2026-05-30 | Install Home Assistant (Docker) | Completed | Home Assistant running on host network, data in /root/homeassistant/config |
 8|| 2026-06-02 | Telegram bots για Petros & Samson | Completed | Petros: @aipetros_bot, Samson: @aisasmson_bot — .env & config.yaml updated |
 9|| 2026-06-02 | Systemd services για gateways | Completed | hermes-gateway-petros.service & hermes-gateway-samson.service — enabled on boot, auto-restart |
