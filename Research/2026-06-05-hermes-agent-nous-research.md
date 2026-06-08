@@ -25,7 +25,7 @@ Tags: #agent, #firecrawl, #hermes, #research, #solomon
 
 ## Συμπέρασμα
 
-- Firecrawl extraction completed. Replace this bullet with Solomon's synthesized conclusion after reviewing the sources.
+- Hermes Agent is an open-source, self-improving AI agent by Nous Research that provides persistent memory, skill generation, cross-platform accessibility (Telegram, Discord, etc.), scheduled automations, and agent delegation. It is designed to grow more capable over time by learning from user interactions and project context.
 
 ## Extracted source summaries
 
