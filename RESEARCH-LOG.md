@@ -41,3 +41,6 @@ This file tracks important research findings, briefs, and knowledge-scouting wor
 ## Backup Mon Jun  8 10:47:10 UTC 2026
 Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260608_104710.tar.gz
 Size: 1.9M
+[2026-06-08 10:50:10] Cleanup routine ran: no files found for cleanup.
+[2026-06-08 10:50:40 UTC] Solomon cleanup routine ran: no files found for cleanup.
+[2026-06-08 10:54:10] Cleanup routine ran. No files older than 7 days found in caches, logs, or Obsidian temporary files. No session files older than 30 days found.
