@@ -279,3 +279,21 @@ Size: 4.1G
 ## [20260609_010932] Backup of Obsidian Vault created at /root/backups/obsidian_vault_backup_20260609_010932.tar.gz
 
 [2026-06-09 01:15:42] Cleanup routine run: no files found for cleanup.
+
+[2026-06-09 08:27:34] Cleanup routine run: found files:
+
+[2026-06-09 08:28:25] Cleanup routine run: found files:
+
+[2026-06-09 08:28:27] Cleanup routine run: found files:
+---
+Timestamp: 2026-06-09 08:34:20 UTC
+Performed by: Solomon (Research Analyst) as explicit backup job.
+Facts:
+  - Executed backup script: /root/backup_script.sh
+  - Output from script:
+      tar: ./backups/obsidian_vault_20260609_082713.tar.gz: file changed as we read it
+
+      [Command timed out after 180s]
+---
+
+[2026-06-09 08:36:29] Cleanup routine run: found files:\n  /root/Documents/ObsidianVault/.git/objects/pack/tmp_pack_oGLJKY
