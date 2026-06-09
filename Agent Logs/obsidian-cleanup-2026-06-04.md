@@ -1,0 +1,165 @@
+
+## 2026-06-04 15:01:54 UTC — Archived Keep notes deletion
+
+Deleted 152 markdown notes from `Keep Imports/` whose first line contained `#Keep/Archived`.
+
+- `Keep Imports/2102585991.md`
+- `Keep Imports/6 martiou consentyx.md`
+- `Keep Imports/Agnostes lexis.md`
+- `Keep Imports/Akorda.md`
+- `Keep Imports/Akropoli tour.md`
+- `Keep Imports/Apps.md`
+- `Keep Imports/Bet ideas.md`
+- `Keep Imports/Books (2).md`
+- `Keep Imports/Books.md`
+- `Keep Imports/Bugnstoiximan.md`
+- `Keep Imports/Bugs.md`
+- `Keep Imports/Buy (2).md`
+- `Keep Imports/Buy safe.md`
+- `Keep Imports/Caricature photoshop.md`
+- `Keep Imports/Carrot cake.md`
+- `Keep Imports/Coding app.md`
+- `Keep Imports/David.md`
+- `Keep Imports/Delivery.md`
+- `Keep Imports/Design bakery promotion.md`
+- `Keep Imports/Diana ivanova.md`
+- `Keep Imports/Diana.md`
+- `Keep Imports/Dribbble ideaa.md`
+- `Keep Imports/Eat & Drink.md`
+- `Keep Imports/Endokrinologos.md`
+- `Keep Imports/English.md`
+- `Keep Imports/Everything in one place.md`
+- `Keep Imports/Farmaka.md`
+- `Keep Imports/Fb login.md`
+- `Keep Imports/Food.md`
+- `Keep Imports/Games (2).md`
+- `Keep Imports/Games.md`
+- `Keep Imports/Gif.md`
+- `Keep Imports/Good idwaa come from your pain.md`
+- `Keep Imports/Google home.md`
+- `Keep Imports/Granita.md`
+- `Keep Imports/Guitar songs (2).md`
+- `Keep Imports/Guitar songs.md`
+- `Keep Imports/Hair.md`
+- `Keep Imports/House.md`
+- `Keep Imports/Ideas startup.md`
+- `Keep Imports/Ikea.md`
+- `Keep Imports/JYSK.md`
+- `Keep Imports/Job posts.md`
+- `Keep Imports/Jubmo.md`
+- `Keep Imports/Jumbo appkries.md`
+- `Keep Imports/Jumbo.md`
+- `Keep Imports/Jysk (2).md`
+- `Keep Imports/Kalamata.md`
+- `Keep Imports/Kithara (2).md`
+- `Keep Imports/Klurema 13.00.md`
+- `Keep Imports/Kourema 7.30.md`
+- `Keep Imports/Kourion 7.30.md`
+- `Keep Imports/Koyreion.md`
+- `Keep Imports/Leroy.md`
+- `Keep Imports/Livas.md`
+- `Keep Imports/Logistria.md`
+- `Keep Imports/Monzo.md`
+- `Keep Imports/Movies.md`
+- `Keep Imports/Music.md`
+- `Keep Imports/Na kerdisi i omafa xoris na dexti goal nai oxi.md`
+- `Keep Imports/Naxos home.md`
+- `Keep Imports/Naxos.md`
+- `Keep Imports/New project.md`
+- `Keep Imports/Oddssafari.md`
+- `Keep Imports/Olympus.md`
+- `Keep Imports/One argiris aris kousa.md`
+- `Keep Imports/Order seamless app.md`
+- `Keep Imports/Orthopedic.md`
+- `Keep Imports/Os.md`
+- `Keep Imports/Out of.md`
+- `Keep Imports/Paisios den vs nig apostolos.md`
+- `Keep Imports/Physio.md`
+- `Keep Imports/Poten.md`
+- `Keep Imports/Projects.md`
+- `Keep Imports/Questions.md`
+- `Keep Imports/Radio fm statiob.md`
+- `Keep Imports/Radio stations.md`
+- `Keep Imports/Remote desktop.md`
+- `Keep Imports/Routine.md`
+- `Keep Imports/SOfia english.md`
+- `Keep Imports/Savato.md`
+- `Keep Imports/Sg digital.md`
+- `Keep Imports/Sketch videos.md`
+- `Keep Imports/Smashing.md`
+- `Keep Imports/Spitify.md`
+- `Keep Imports/Stoiximan improvements.md`
+- `Keep Imports/Super (3).md`
+- `Keep Imports/Super (4).md`
+- `Keep Imports/Super (5).md`
+- `Keep Imports/Super (6).md`
+- `Keep Imports/Super (7).md`
+- `Keep Imports/Syriana.md`
+- `Keep Imports/Syro.md`
+- `Keep Imports/Tablet.md`
+- `Keep Imports/Tasks by xrysa.md`
+- `Keep Imports/Tasks.md`
+- `Keep Imports/Teleferic.md`
+- `Keep Imports/Test.md`
+- `Keep Imports/Testing ideas.md`
+- `Keep Imports/Thiroidis.md`
+- `Keep Imports/Tickets.md`
+- `Keep Imports/To do.md`
+- `Keep Imports/Today tasks.md`
+- `Keep Imports/Trash movie.md`
+- `Keep Imports/Triti 21.00 12.md`
+- `Keep Imports/Tron novie 2010.md`
+- `Keep Imports/Tshirt.md`
+- `Keep Imports/Ux blog.md`
+- `Keep Imports/Ux workshop.md`
+- `Keep Imports/Ux.md`
+- `Keep Imports/Vagus vasilis.md`
+- `Keep Imports/Vapsimo.md`
+- `Keep Imports/Vodafone Internet.md`
+- `Keep Imports/WINE TASTING.md`
+- `Keep Imports/Watch.md`
+- `Keep Imports/Windows key.md`
+- `Keep Imports/Youtube ideas.md`
+- `Keep Imports/buy.md`
+- `Keep Imports/career.md`
+- `Keep Imports/diatrofi.md`
+- `Keep Imports/efood.md`
+- `Keep Imports/focus group.md`
+- `Keep Imports/gliko psigiou.md`
+- `Keep Imports/inage.md`
+- `Keep Imports/interests.md`
+- `Keep Imports/makarolia pesto avocado.md`
+- `Keep Imports/movies (2).md`
+- `Keep Imports/openbet.md`
+- `Keep Imports/picnic.md`
+- `Keep Imports/psonia spiti.md`
+- `Keep Imports/salata vegan.md`
+- `Keep Imports/samorost 3.md`
+- `Keep Imports/sketch licence.md`
+- `Keep Imports/spiti tasks.md`
+- `Keep Imports/stergioos katapino psoles.md`
+- `Keep Imports/suoer simera.md`
+- `Keep Imports/super (2).md`
+- `Keep Imports/super.md`
+- `Keep Imports/taxidi.md`
+- `Keep Imports/to do today.md`
+- `Keep Imports/today.md`
+- `Keep Imports/trip.md`
+- `Keep Imports/uestions.md`
+- `Keep Imports/vodafone.md`
+- `Keep Imports/Βιοιατρικη.md`
+- `Keep Imports/Κλήση.md`
+- `Keep Imports/Κρασια.md`
+- `Keep Imports/Κωνσταντίνος.md`
+- `Keep Imports/Μαρωνειας.md`
+- `Keep Imports/Νάξος (2).md`
+- `Keep Imports/Νάξος.md`
+- `Keep Imports/παατζααροσαλαατα.md`
+
+## 2026-06-04 15:02:31 UTC — Obvious old/stale note deletion
+
+Deleted only clearly stale/empty notes after review:
+
+- `Strategy.md`
+- `Keep Imports/My shopping list.md`
+- `Keep Imports/shopping.md`

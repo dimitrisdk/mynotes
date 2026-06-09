@@ -1,0 +1,10 @@
+date,month,description,amount,currency,type,category_or_asset,account,notes,source_status
+2026-06-03,2026-06,Protein powder order,99.90,EUR,Expense,Wellness / Supplements,Card / bank app unknown,Initial tracked expense; source was June wallet screenshot,Wallet screenshot / pending
+2026-06-03,2026-06,ETF investment contribution,1300.00,EUR,Expense,Investment / ETF,Broker unknown,User preference: count monthly ETF contribution as expense for simpler budget tracking; specific ETF/account not yet confirmed,Manual note from user / recorded as expense
+2026-06-03,2026-06,GOOGLE*GOOGLE ONE NL,29.99,EUR,Expense,Software / Cloud subscription,Eurobank card ending 6295,Google One annual renewal/expiry reminder set for 2027-06-03,Eurobank notification / recorded
+2026-06-03,2026-06,Souvlaki,7.30,EUR,Expense,Food / Souvlaki,Unknown,Manual user entry: 7.30 se souvlakia,Manual / recorded
+2026-06-04,2026-06,Skroutz / Bazaarshoes - Birkenstock Arizona sandals,89.00,EUR,Expense,Clothing / Footwear,Card ending 3964,Order 260604-7135706; delivery expected by 2026-06-08 at Skroutz Point Lidl Peristeri; size 42 stone regular fit,Skroutz order / in processing
+2026-06-04,2026-06,Skroutz / Stollas - Ernie Ball Regular Slinky 10-46 strings,17.70,EUR,Expense,Music / Instrument supplies,Card ending 3964,Order 260604-3360903; 3 sets x 5.90 EUR; delivery expected by 2026-06-08 at Skroutz Point Lidl Peristeri,Skroutz order / in processing
+2026-06-04,2026-06,PEANUTS EGALEO,13.32,EUR,Expense,Food / Snacks,payzy Visa Debit Virtual,Google Wallet notification at 15:03,Google Wallet / recorded
+2026-06-04,2026-06,AB_AIGALEO,57.13,EUR,Expense,Groceries / Supermarket,payzy Visa Debit Virtual,Google Wallet notification at 15:03,Google Wallet / recorded
+2026-06-04,2026-06,Motokouzi - beers,10.00,EUR,Expense,Food / Drinks,Unknown,Manual user entry: xtes exodo biires motokouzi 10 euro,Manual / recorded
