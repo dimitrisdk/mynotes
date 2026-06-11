@@ -577,3 +577,15 @@ Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault
 Size: 67M
 
 [2026-06-11 06:28:12] Cleanup routine run: no files found for cleanup.
+
+
+## [2026-06-11 06:28:17 UTC]
+- **Performed by:** Solomon (scheduled sync job)
+- **Facts:**
+  - Obsidian vault sync found local/remote divergence and SSH port 22 timeout to GitHub.
+  - Verified GitHub SSH auth works through `ssh.github.com:443`; configured vault repo `core.sshCommand` to use port 443.
+  - Merged remote `origin/main` into local `main` and resolved `IT-LOGS.md` conflict by preserving both non-duplicate Dashboard QA entries.
+- **Assumptions / Gaps:**
+  - Repo-local SSH-over-443 config should make future vault pushes more reliable from this VPS.
+- **Εκτίμηση:**
+  - This was an operational sync fix, not substantive research.
