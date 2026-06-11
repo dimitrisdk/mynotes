@@ -589,3 +589,20 @@ Size: 67M
   - Repo-local SSH-over-443 config should make future vault pushes more reliable from this VPS.
 - **Εκτίμηση:**
   - This was an operational sync fix, not substantive research.
+
+
+## Explicit Obsidian backup verification — 2026-06-11T06:28:06Z
+
+- Performed by: Solomon (Research Analyst) as explicit backup cron job.
+- Pre-check: `/root/backup_script.sh` existed and was executable; disk before backup was `/dev/root` 96G size, 31G used, 66G available, 33% used.
+- Cleanup: skipped because free space was sufficient; no destructive cleanup was needed.
+- Attempt 1: executed `/root/backup_script.sh`; exit code `1`; output: `tar: ./.git: file changed as we read it; Backup failed: tar exited with non-zero status`.
+- Attempt 2 (retry after transient tar/git change): executed `/root/backup_script.sh`; exit code `0`; output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_062804.tar.gz; Size: 67M`.
+- Verified artifact: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_062804.tar.gz`
+- Artifact size: `69720699` bytes
+- Integrity check: `gzip -t` OK
+- Tar listing sample: `./`, `./SOLOMON-SYNC-LOG.md`, `./RESEARCH-LOG.md.backup`, `./SYNC_JOB_REPORT.md`, `./Poems.md`
+- SHA256: `f1681cb0b773c7ebae81fd9d30403dd4f555e64501a8e1825cd757e779ff07c6`
+- Disk status after backup: `/dev/root` 96G size, 31G used, 65G available, 33% used.
+- Assumptions / gaps: This confirms a local tarball backup only; it does not confirm off-machine replication.
+- Εκτίμηση: Backup succeeded after one transient tar read failure; artifact integrity was independently verified.
