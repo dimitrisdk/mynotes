@@ -606,3 +606,9 @@ Size: 67M
 - Disk status after backup: `/dev/root` 96G size, 31G used, 65G available, 33% used.
 - Assumptions / gaps: This confirms a local tarball backup only; it does not confirm off-machine replication.
 - Εκτίμηση: Backup succeeded after one transient tar read failure; artifact integrity was independently verified.
+
+## Backup Thu Jun 11 06:29:18 UTC 2026
+Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_062917.tar.gz
+Size: 67M
+
+[2026-06-11 06:29:19] Cleanup routine run: no files found for cleanup.
