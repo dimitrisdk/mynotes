@@ -1165,3 +1165,44 @@ Size: 67M
 
 [2026-06-11 11:33:39] Cleanup routine run: found files:
   /root/.hermes/profiles/solomon/cache/screenshots/browser_screenshot_51d4d522f4fd45d382e2e4c1f50465f1.png
+
+
+## Backup verification addendum — 2026-06-11 11:33:40 UTC
+- **Performed by:** Solomon (Research Analyst) as explicit scheduled backup job.
+- **Facts:**
+    - Pre-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used.
+    - Executed backup script: `/root/backup_script.sh`.
+    - Script exit code: `0`.
+    - Script output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113337.tar.gz`; reported size `67M`.
+    - Newest verified artifact at final check: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113337.tar.gz`.
+    - Verified artifact size: `69,843,398` bytes; mtime `2026-06-11 11:33:39.390176565 +0000`.
+    - Integrity: `gzip -t` OK; `tar -tzf` listed archive entries successfully.
+    - SHA256: `7f2e9c75dbfbfbc018ba685636d0c453533f96abac46feb705c6f1232006d75a`.
+    - Post-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used.
+- **Assumptions / Gaps:**
+    - This verifies a local explicit tarball backup only; it does not confirm off-machine/GitHub replication.
+    - Destructive cleanup of old backups was not needed because free disk space was sufficient.
+- **Εκτίμηση:**
+    - Local backup completed successfully and the newest observed tarball passed independent integrity checks.
+
+
+## Explicit backup verification — 2026-06-11 11:33:39 UTC
+- **Performed by:** Solomon (Research Analyst) as explicit scheduled backup job.
+- **Facts:**
+  - Pre-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used for `/root` and `/root/Documents`.
+  - Executed backup script: `/root/backup_script.sh`; script exit code: `0`.
+  - Script output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113337.tar.gz`; reported size `67M`.
+  - Final cross-check newest verified artifact: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113337.tar.gz`.
+  - Verified artifact size: `69,843,398` bytes; mtime `2026-06-11 11:33:39.390176565 +0000`.
+  - Integrity: `gzip -t` OK; `tar -tzf` listed `411` archive entries successfully.
+  - SHA256: `7f2e9c75dbfbfbc018ba685636d0c453533f96abac46feb705c6f1232006d75a`.
+  - Post-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used; `68,931,035,136` bytes available.
+- **Assumptions / Gaps:**
+  - This verifies a local explicit tarball backup only; it does not prove off-machine/GitHub replication.
+  - No destructive old-backup cleanup was needed because free disk space was clearly sufficient.
+  - The backup script wrote duplicate basic `## Backup Thu Jun 11 11:33:39 UTC 2026` entries; this block is the non-duplicate structured verification addendum.
+- **Εκτίμηση:**
+  - Local backup completed successfully and the newest observed archive passed independent integrity checks.
+
+[2026-06-11 11:34:27] Cleanup routine run: found files:
+  /root/.hermes/profiles/solomon/cache/screenshots/browser_screenshot_51d4d522f4fd45d382e2e4c1f50465f1.png
