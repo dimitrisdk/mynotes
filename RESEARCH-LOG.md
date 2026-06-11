@@ -616,3 +616,134 @@ Size: 67M
 ## Backup Thu Jun 11 06:29:43 UTC 2026
 Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_062941.tar.gz
 Size: 67M
+
+
+## Explicit Obsidian backup verification — 2026-06-11T06:29:18Z
+
+- Performed by: Solomon (Research Analyst) as explicit backup cron job.
+- Pre-check: `/root/backup_script.sh` existed and was executable; disk before backup was `/dev/root` 96G size, 31G used, 65G available, 33% used (`69788934144` bytes available).
+- Cleanup: skipped because free space was sufficient; no destructive cleanup was needed.
+- Executed backup script: `/root/backup_script.sh`; exit code `0`; output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_062917.tar.gz; Size: 67M`.
+- Verified artifact: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_062917.tar.gz`
+- Artifact size: `69764057` bytes
+- Integrity check: `gzip -t` OK
+- Tar listing sample: `./`, `./SOLOMON-SYNC-LOG.md`, `./RESEARCH-LOG.md.backup`, `./SYNC_JOB_REPORT.md`, `./Poems.md`
+- SHA256: `9b707676ad4d93738f13a8b7bc10d95bbc4fc5972b91bf072fe739e97526bc8b`
+- Disk status after backup: `/dev/root` 96G size, 31G used, 65G available, 33% used (`69719048192` bytes available).
+- Assumptions / gaps: This confirms a local tarball backup only; it does not confirm off-machine replication.
+- Εκτίμηση: Backup succeeded and the archive integrity was independently verified.
+
+
+## [2026-06-11 06:29:38 UTC]
+- **Performed by:** Solomon (Research Analyst) as part of generic cron job health check for prompt `Every run job`.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json`: 95 cron jobs total, 93 enabled.
+    - Latest recorded status distribution is now 47 `error`, 46 `ok`, and 2 unset/none; this is improved from the earlier logged snapshot at 06:24 UTC (71 `error`, 22 `ok`, 2 unset/none).
+    - Dominant latest error remains provider quota exhaustion: 34 jobs show `RuntimeError: HTTP 429: The usage limit has been reached`.
+    - Persistent script misconfiguration remains: 9 jobs use script value `echo hello`, which Hermes resolves as missing file `/root/.hermes/profiles/solomon/scripts/echo hello`; three additional jobs have other missing-script or intentional failing-script errors.
+    - Six enabled duplicate `every-run-task` jobs with prompt `Every run job` still exist; 2 now show `ok` latest status, while 4 still show HTTP 429 latest status from around 05:23–05:24 UTC.
+    - Duplicate/test-job families remain enabled: `silent-task` ×15; `backup-database`, `regular-task`, `custom-task`, `db-maintenance` ×9 each; `watchdog-test`, `sync-configs`, `cleanup-temp`, `backup-db`, `errors-only-task`, `every-run-task` ×6 each.
+- **Assumptions / Gaps:**:
+    - The snapshot is still pre-finalization for the currently executing cron run, so the current job's own persisted output may update after this response is stored.
+    - I did not modify, pause, delete, or reconfigure any jobs because the generic prompt does not grant remediation scope.
+    - The HTTP 429 condition appears to be provider quota/usage-limit exhaustion, but exact provider account quota state was not independently verified.
+- **Εκτίμηση:**:
+    The health picture improved materially since 06:24 UTC, but the profile is still noisy: almost half of configured jobs are failing, duplicate generic/test jobs remain enabled, and many failures are predictable misconfigurations rather than useful scheduled work. The main risk is alert/output noise plus renewed quota burn when provider quota recovers.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `/root/.hermes/profiles/solomon/cron/output/aa7178a3b0b2/2026-06-11_06-25-35.md`
+    - `/root/.hermes/profiles/solomon/cron/output/d518fb093b43/2026-06-11_06-27-40.md`
+    - `/root/.hermes/profiles/solomon/logs/agent.log`
+
+
+## [2026-06-11 06:29:58 UTC]
+- **Performed by:** Solomon (Research Analyst) as errors-only cron health check.
+- **Facts:**:
+    - Inspected `/root/.hermes/profiles/solomon/cron/jobs.json` at 2026-06-11T06:28 UTC.
+    - Current cron registry contains 95 jobs: 46 active jobs with no latest error, 47 active jobs with latest recorded error, and 2 paused jobs.
+    - Dominant latest-error classes: 34 jobs with `RuntimeError: HTTP 429: The usage limit has been reached`; 9 jobs with `Script not found: /root/.hermes/profiles/solomon/scripts/echo hello`; 1 job with `Script exited with code 1`; 3 additional missing-script variants.
+    - New/recent script errors after the prior 06:25 health log include `watchdog-test` (`15b9f5d6a352`) at 2026-06-11T06:28:54 UTC, `watchdog-test` (`0c2b6176dad8`) at 06:27:19 UTC, `E2E Test - Failing Job` (`3afd8f2c99e7`) at 06:27:19 UTC, and `backup-database` (`c26f4c0c87b6`) at 06:26:02 UTC.
+    - There are six active jobs named `errors-only-task`; two latest runs are now `ok`, while four still show latest error `RuntimeError: HTTP 429: The usage limit has been reached` from ~05:23–05:24 UTC.
+- **Assumptions / Gaps:**:
+    - I did not modify cron jobs, credentials, scripts, schedules, or provider settings.
+    - The HTTP 429 class likely reflects provider quota/rate-limit exhaustion, but exact provider/quota source was not verified in this run.
+    - Some failing jobs look like test fixtures or duplicate cron entries; intent is unknown.
+- **Εκτίμηση:**:
+    The error surface has improved since the previous log (70 latest-error jobs then, 47 now), but there are still active recurring failures. The actionable problems remain provider quota exhaustion and no-agent scripts configured as literal shell snippets instead of script files.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `hermes cron list --all` output from 2026-06-11T06:28 UTC.
+
+[2026-06-11 06:30:07] Cleanup routine run: no files found for cleanup.
+
+
+## Backup verification — 2026-06-11 06:29:50 UTC
+- **Performed by:** Solomon (Research Analyst) as explicit scheduled backup job.
+- **Facts:**
+  - Pre-check disk status: `/root` and `/root/Documents` on `/dev/root`, 96G total, 31G used, 65G available, 33% used.
+  - Executed backup script: `/root/backup_script.sh`.
+  - Script exit code: 0.
+  - Script output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_062941.tar.gz`; reported size `67M`.
+  - Verified artifact: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_062941.tar.gz`.
+  - Artifact size: `69779286` bytes.
+  - Integrity check: `gzip -t` PASS; `tar -tzf` listed archive contents successfully.
+  - SHA256: `7ce2241b172150f9331b043528b655d811195d05553b2fe640a740c66bd4160e`.
+  - Post-check disk status: `/root` and `/root/Documents` still 65G available, 33% used.
+  - Vault git status after backup verification: `## main...origin/main` (clean working tree, no local ahead/behind marker shown).
+- **Assumptions / Gaps:**
+  - This verifies a local tarball backup and archive integrity; it does not independently confirm off-machine replication of the tarball.
+  - Old-backup cleanup was not needed because free disk space was sufficient.
+- **Εκτίμηση:**
+  - Backup completed successfully and the resulting archive is readable. Operational risk is low for this run; remaining gap is off-machine redundancy.
+
+[2026-06-11 06:30:35] Cleanup routine run: no files found for cleanup.
+
+## Backup Thu Jun 11 06:30:39 UTC 2026
+Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_063038.tar.gz
+Size: 67M
+
+[2026-06-11 06:30:41] Cleanup routine run: no files found for cleanup.
+
+## Backup Thu Jun 11 06:30:47 UTC 2026
+Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_063045.tar.gz
+Size: 67M
+
+
+## 2026-06-11 06:30:49 UTC — Explicit Obsidian backup verification
+- **Performed by:** Solomon (Research Analyst) as explicit backup cron job.
+- **Facts:**
+  - Pre-check disk status: `/dev/root` 96G total, 31G used, 65G available, 33% used (`df -h /root /root/Documents` at 2026-06-11 06:30:34 UTC).
+  - Executed backup script: `/root/backup_script.sh` (executable; size 1035 bytes; mtime 2026-06-09 18:50:03 +0000).
+  - Script exit code: 0.
+  - Script output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_063038.tar.gz`; `Size: 67M`.
+  - Verified artifact: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_063038.tar.gz`.
+  - Artifact size: 69,794,323 bytes; mtime: 2026-06-11 06:30:39.717486052 +0000.
+  - Integrity: `gzip -t` passed; `tar -tzf` listed archive contents successfully (sample: `./`, `./SOLOMON-SYNC-LOG.md`, `./RESEARCH-LOG.md.backup`, `./SYNC_JOB_REPORT.md`, `./Poems.md`).
+  - SHA256: `1fcaffb35d637fd42004f2321825728c2b858a824f184b4d740f53875eb7493a`.
+  - Post-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used (`df -h /root /root/Documents` at 2026-06-11 06:30:49 UTC).
+- **Assumptions / Gaps:**
+  - This verifies a local tarball backup only; it does **not** confirm off-machine replication or GitHub sync.
+  - No destructive old-backup cleanup was needed because free disk space was sufficient.
+- **Εκτίμηση:**
+  - Explicit local backup completed and passed independent archive integrity checks.
+
+## [2026-06-11 06:31:08 UTC]
+- **Performed by:** Solomon (Research Analyst) as explicit backup job.
+- **Facts:**:
+    - Pre-check disk status before backup: `/dev/root` 96G total, 32G used, 65G available, 33% used for both `/root` and `/root/Documents`.
+    - Executed backup script: `/root/backup_script.sh`.
+    - Script exit code: 0.
+    - Script output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_063045.tar.gz`; reported size: `67M`.
+    - Verified artifact path: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_063045.tar.gz`.
+    - Verified artifact size: `69794346` bytes; modified timestamp: `2026-06-11 06:30:47 +0000`.
+    - Integrity check: `gzip -t` returned OK; `tar -tzf` successfully listed archive contents including `RESEARCH-LOG.md`.
+    - SHA256: `3bb505930edd3010ac9a77039f1a2b8e98de9fbce6d6832a1c0172d0a05ceb90`.
+    - Post-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used.
+    - No concurrent `obsidian`, `backup`, relevant `git pull`, or `tar ... ObsidianVault` process was observed after verification.
+- **Assumptions / Gaps:**:
+    - This verifies the local explicit tarball backup only; it does not confirm off-machine replication or remote GitHub sync.
+    - Old-backup cleanup was not performed because available disk space was sufficient.
+- **Εκτίμηση:**:
+    Local backup completed successfully and passed independent archive integrity checks. Operational risk is low for the local artifact; the remaining gap is remote/off-machine redundancy.
+- **Πηγές:**:
+    - Local command output from `/root/backup_script.sh`, `stat`, `gzip -t`, `tar -tzf`, `sha256sum`, and `df -h` during the 2026-06-11 06:30 UTC cron run.
