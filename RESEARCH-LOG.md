@@ -1282,3 +1282,33 @@ Size: 67M
     - No destructive old-backup cleanup was needed because free disk space was adequate.
 - **Εκτίμηση:**:
     Local explicit backup succeeded and the latest archive is readable with stable integrity checks.
+
+
+## Explicit backup final cross-check addendum — 2026-06-11 11:38:00 UTC
+- **Performed by:** Solomon (Research Analyst) as explicit scheduled backup job.
+- **Facts:**
+  - A newer near-simultaneous explicit backup artifact appeared after the previous verification block.
+  - Newest verified artifact: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113732.tar.gz`.
+  - Artifact size: `69,899,956` bytes; mtime `2026-06-11 11:37:34.387636260 UTC`.
+  - Integrity: `gzip -t` OK; `tar -tzf` OK with `421` archive entries listed successfully.
+  - SHA256: `c311efebffa44d964bc7d9096d0763df94c195f46c9384f9dfd5e791327f114a`.
+  - Disk after final cross-check: `/dev/root` 96G total, 33G used, 64G available, 34% used.
+- **Assumptions / Gaps:**
+  - This final cross-check verifies local tarball integrity only; it does not confirm off-machine/GitHub replication.
+- **Εκτίμηση:**
+  - The latest observed local explicit backup archive is valid; earlier same-minute artifacts are superseded by this newer verified tarball.
+
+
+## [2026-06-11 11:38:07 UTC] Explicit backup final cross-check addendum
+- **Performed by:** Solomon (Research Analyst) as explicit backup cron job.
+- **Facts:**:
+    - A newer/concurrent explicit backup artifact appeared after the prior verification entry.
+    - Newest verified artifact at final check: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113732.tar.gz`.
+    - Artifact bytes: `69899956`; archive mtime: `2026-06-11 11:37:34.387636260 +0000`.
+    - Integrity: `gzip_t=OK`; `tar_tzf=OK`; entries: `421`.
+    - SHA256: `c311efebffa44d964bc7d9096d0763df94c195f46c9384f9dfd5e791327f114a`.
+    - Disk final: `/dev/root` 96G total, 33G used, 64G available, 34% use.
+- **Assumptions / Gaps:**:
+    - This addendum verifies the newest local tarball only; it does not confirm off-machine replication.
+- **Εκτίμηση:**:
+    Final local backup state is healthy; report should reference this newest verified archive.
