@@ -747,3 +747,410 @@ Size: 67M
     Local backup completed successfully and passed independent archive integrity checks. Operational risk is low for the local artifact; the remaining gap is remote/off-machine redundancy.
 - **Πηγές:**:
     - Local command output from `/root/backup_script.sh`, `stat`, `gzip -t`, `tar -tzf`, `sha256sum`, and `df -h` during the 2026-06-11 06:30 UTC cron run.
+
+[2026-06-11 06:31:27] Cleanup routine run: no files found for cleanup.
+
+
+## [2026-06-11 06:31:51 UTC]
+- **Performed by:** Solomon (Research Analyst) as errors-only cron health check.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json`: 95 jobs total, 93 active, 2 paused.
+    - Current latest-status distribution: 61 `ok`, 32 `error`, 2 unset/none; active latest-error jobs improved from the prior errors-only log's 47 to 32.
+    - Dominant remaining latest-error classes: 19 jobs with `RuntimeError: HTTP 429: The usage limit has been reached`; 9 jobs with `Script not found: /root/.hermes/profiles/solomon/scripts/echo hello`; 4 one-off script/missing-script failures.
+    - No active job has a new latest error timestamp after the previous errors-only log at 2026-06-11 06:29:58 UTC.
+    - Six active `errors-only-task` jobs remain; 3 are now `ok`, 3 still carry older HTTP 429 latest errors from ~05:24 UTC.
+- **Assumptions / Gaps:**:
+    - I did not modify cron jobs, credentials, scripts, schedules, or provider settings.
+    - Remaining HTTP 429 errors are assumed to be provider quota/usage-limit state based on recorded `last_error`; quota source was not independently queried.
+- **Εκτίμηση:**:
+    Error surface is improving, not worsening. No new error signature appeared in this run, but the registry still contains persistent stale/latest failures from provider quota exhaustion and literal shell-snippet script misconfiguration.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `/root/.hermes/profiles/solomon/logs/errors.log`
+
+
+## [2026-06-11 06:32:04 UTC]
+- **Performed by:** Solomon (Research Analyst) as part of generic cron job health check for prompt `Every run job`.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json`; registry timestamp `2026-06-11T06:31:48.511676+00:00`.
+    - Current registry contains 95 jobs: 93 active/enabled and 2 paused.
+    - Latest active status has improved to 63 active jobs without latest error and 30 active jobs with latest error; this is better than the 06:29 UTC health-log snapshot of 46 active jobs without latest error and 47 active jobs with latest error.
+    - Dominant latest-error classes are now: 17 jobs with `RuntimeError: HTTP 429: The usage limit has been reached`; 9 jobs with `Script not found: /root/.hermes/profiles/solomon/scripts/echo hello`; 1 intentional failing script; 3 other missing-script variants.
+    - Six active duplicate `every-run-task` jobs with prompt `Every run job` remain enabled; 3 now show `ok` and 3 still show HTTP 429 latest status from around 05:24 UTC.
+    - Duplicate/test-job families remain enabled: `silent-task` ×15; `backup-database`, `regular-task`, `custom-task`, `db-maintenance` ×9 each; `watchdog-test`, `sync-configs`, `cleanup-temp`, `backup-db`, `errors-only-task`, `every-run-task` ×6 each.
+- **Assumptions / Gaps:**:
+    - I did not modify, pause, delete, or reconfigure cron jobs because the generic prompt does not grant remediation scope.
+    - The HTTP 429 condition appears to be provider quota/usage-limit exhaustion, but exact provider account quota state was not independently verified.
+    - Some jobs appear to be test fixtures or duplicates; their intended retention policy is unknown.
+- **Εκτίμηση:**:
+    The cron error surface is materially improving as quota-affected jobs recover, but the registry is still noisy. The remaining actionable issues are duplicate scheduled test/generic jobs and no-agent script fields configured as literal shell commands instead of script-file paths.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `/root/.hermes/profiles/solomon/cron/output/aa7178a3b0b2/`
+    - `/root/.hermes/profiles/solomon/cron/output/d518fb093b43/`
+    - `/root/.hermes/profiles/solomon/cron/output/cf29493a2231/`
+
+
+## [2026-06-11 11:16:30 UTC]
+- **Performed by:** Solomon (Research Analyst) as part of generic cron job health check for prompt `Regular task`.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json`; registry timestamp `2026-06-11T11:15:16.860914+00:00`.
+    - Current registry contains 95 jobs: 93 active/enabled and 2 paused.
+    - Latest active status has worsened versus the 06:32 UTC health-log snapshot: active jobs with latest error increased from 30 to 91; active jobs without latest error fell from 63 to 2.
+    - Dominant latest-error class is provider quota exhaustion: 78 active jobs report `RuntimeError: HTTP 429: The usage limit has been reached`.
+    - Other active latest-error classes remain script configuration problems: 9 jobs point to missing script path `/root/.hermes/profiles/solomon/scripts/echo hello`; 3 more jobs point to other literal shell-command strings as script paths; 1 job is an intentional failing script (`Script exited with code 1`).
+    - Duplicate generic/test job families remain active: `silent-task` ×15; `backup-database`, `regular-task`, `custom-task`, `db-maintenance` ×9 each; `watchdog-test`, `sync-configs`, `cleanup-temp`, `backup-db`, `errors-only-task`, `every-run-task` ×6 each.
+    - All 9 active `regular-task` jobs and all 6 active `every-run-task` jobs currently show the same HTTP 429 latest error; no `last_delivery_error` was observed in the matching rows.
+- **Assumptions / Gaps:**:
+    - I did not modify, pause, delete, or reconfigure cron jobs because this unattended generic prompt grants monitoring/reporting scope only.
+    - The 429s strongly indicate model/provider quota exhaustion, but exact provider/account quota state was not independently verified.
+    - Some duplicate jobs may be deliberate test fixtures; intended retention policy remains unknown.
+- **Εκτίμηση:**:
+    This is a material negative delta since the previous health snapshot. The cron registry is currently mostly failing again, driven primarily by provider quota exhaustion plus persistent duplicate/test-job noise. The script-field misconfiguration remains secondary but deterministic and will keep failing even after quota recovers.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `/root/.hermes/profiles/solomon/cron/output/cde0ef75cd33/`
+    - `/root/.hermes/profiles/solomon/cron/output/8eaf784e9e97/`
+    - `/root/.hermes/profiles/solomon/cron/output/e833c73442b1/`
+
+
+## [2026-06-11 11:16:20 UTC]
+- **Performed by:** Solomon (Research Analyst) as part of generic cron job health check for prompt `Regular task`.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json`; registry timestamp is `2026-06-11T11:15:16.860914+00:00`.
+    - Current registry contains 95 cron jobs: 93 active/enabled and 2 paused/disabled.
+    - Latest active status distribution has worsened materially since the 06:32 UTC health-log snapshot: active latest-error jobs increased from 30 to 91; active ok/no-error jobs dropped to 2.
+    - Dominant latest-error classes are now 78 jobs with `RuntimeError: HTTP 429: The usage limit has been reached`, 12 jobs with `Script not found`, and 1 job with `Script exited with code 1`.
+    - There are 9 active `regular-task` jobs: 3 with prompt `Regular agent job` and 6 with prompt `Regular task`; all 9 currently carry latest status `error` with HTTP 429 usage-limit errors.
+    - The current job id inferred from `HERMES_SESSION_ID=cron_df9ffcdba309_20260611_111516` matches duplicate `regular-task` job `df9ffcdba309`; its latest persisted output at `/root/.hermes/profiles/solomon/cron/output/df9ffcdba309/2026-06-11_10-44-25.md` failed with HTTP 429.
+    - Separate high-frequency script misconfiguration continues: `/root/.hermes/profiles/solomon/cron/output/feef8717ab90/2026-06-11_11-15-16.md` shows `failing-test-job` runs every 5 minutes and fails because Hermes treats script value `exit 1` as missing script file `/root/.hermes/profiles/solomon/scripts/exit 1`.
+- **Assumptions / Gaps:**:
+    - I did not modify, pause, delete, or reconfigure cron jobs because the generic prompt does not grant remediation scope.
+    - The HTTP 429 class is assumed to be provider quota/usage-limit exhaustion based on recorded `last_error`; exact provider/account quota was not independently queried.
+    - The job registry stores `last_run` as `None` for many jobs despite output files existing, so output directory mtimes were used to verify recent failures where needed.
+- **Εκτίμηση:**:
+    The cron profile has regressed from partial recovery to near-total failure. This is likely caused by renewed provider quota exhaustion plus a large set of duplicate generic/test jobs that keep consuming runs and generating noisy failures. The immediate actionable issue is not research content; it is scheduler hygiene: pause/remove duplicate test jobs and fix or disable no-agent script jobs configured as literal shell snippets.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `/root/.hermes/profiles/solomon/cron/output/df9ffcdba309/2026-06-11_10-44-25.md`
+    - `/root/.hermes/profiles/solomon/cron/output/feef8717ab90/2026-06-11_11-15-16.md`
+    - Local environment variable `HERMES_SESSION_ID=cron_df9ffcdba309_20260611_111516`
+
+
+## [2026-06-11 11:16:44 UTC]
+- **Performed by:** Solomon (Research Analyst) as part of generic cron job health check for prompt `Regular task`.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json`: 95 jobs total, 93 active/enabled and 2 paused/unset.
+    - Current latest active status has worsened materially versus the 2026-06-11 06:32 UTC health-log snapshot: 91 active jobs now show `error` and only 2 active jobs show `ok`; prior snapshot was 30 active latest-error jobs and 63 active jobs without latest error.
+    - Dominant latest-error classes are now: 78 jobs with `RuntimeError: HTTP 429: The usage limit has been reached`; 9 jobs with `Script not found: /root/.hermes/profiles/solomon/scripts/echo hello`; 1 intentional failing script; 3 other missing-script variants.
+    - Nine active duplicate `regular-task` jobs remain enabled on an every-30-minute schedule; all nine latest runs failed with HTTP 429 around 2026-06-11 10:44–10:51 UTC.
+    - Latest output files for the checked `regular-task` jobs record `# Cron Job: regular-task (FAILED)` and the same `RuntimeError: HTTP 429: The usage limit has been reached` error.
+    - Duplicate/test-job families remain enabled: `silent-task` ×15; `backup-database`, `regular-task`, `custom-task`, `db-maintenance` ×9 each; `watchdog-test`, `sync-configs`, `cleanup-temp`, `backup-db`, `errors-only-task`, `every-run-task` ×6 each.
+- **Assumptions / Gaps:**:
+    - I did not modify, pause, delete, or reconfigure cron jobs because the generic prompt does not grant remediation scope.
+    - The HTTP 429 condition appears to be provider quota/usage-limit exhaustion from recorded job errors; exact provider account quota state was not independently verified.
+    - Some repeated jobs appear to be test fixtures or accidental duplicates; intended retention policy is unknown.
+- **Εκτίμηση:**:
+    The cron registry has regressed sharply since the early-morning snapshot: provider quota exhaustion is again the dominant failure mode and the duplicate generic/test jobs amplify the burn/noise. The `regular-task` family itself is fully failing, so this is material and should not be suppressed as a no-op run.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `/root/.hermes/profiles/solomon/cron/output/8eaf784e9e97/2026-06-11_10-44-26.md`
+    - `/root/.hermes/profiles/solomon/cron/output/cde0ef75cd33/`
+    - `/root/.hermes/profiles/solomon/cron/output/bc95fdf9a5db/`
+
+## [2026-06-11 11:17:42 UTC]
+- **Performed by:** Solomon (Research Analyst) as part of generic cron job health check for prompt `Regular agent job`.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json` during cron session `cron_df9ffcdba309_20260611_111516`: 95 jobs total, 93 active/enabled, 2 paused/disabled.
+    - Current active latest-status distribution is 88 `error` jobs and 5 non-error/ok jobs, a small improvement from the immediately preceding health-log entries around 11:16–11:17 UTC that reported 91 active errors and 2 ok jobs.
+    - Dominant active error class remains provider quota exhaustion: 75 active jobs report `RuntimeError: HTTP 429: The usage limit has been reached`.
+    - Deterministic script misconfiguration remains: 9 active jobs report missing script path `/root/.hermes/profiles/solomon/scripts/echo hello`, plus 3 other missing-script variants and 1 explicit nonzero script failure.
+    - The `regular-task` duplicate family has 9 active every-30-minute jobs: 3 have just succeeded at 11:16–11:17 UTC, while 6 still show latest HTTP 429 failures from 10:44–10:51 UTC.
+    - Latest successful `regular-task` outputs inspected: `/root/.hermes/profiles/solomon/cron/output/8eaf784e9e97/2026-06-11_11-16-46.md`, `/root/.hermes/profiles/solomon/cron/output/daa7eb7472b0/2026-06-11_11-16-59.md`, and `/root/.hermes/profiles/solomon/cron/output/b29471eacca8/2026-06-11_11-17-01.md`; these reports are partly stale because they described all 9 regular jobs as failing before their own status updates landed.
+- **Assumptions / Gaps:**:
+    - I did not modify, pause, delete, or reconfigure cron jobs, credentials, schedules, or model/provider settings.
+    - The HTTP 429 class is interpreted as provider usage-limit exhaustion from local recorded errors; provider account quota was not independently queried.
+    - The three new successes may indicate transient quota recovery or staggered retries; it is not yet enough evidence that the overall cron surface is healthy.
+- **Εκτίμηση:**:
+    There is a small but real improvement versus the immediately prior health snapshot, but the system remains materially unhealthy: most active jobs still fail, duplicate generic jobs continue to consume runs, and script jobs will keep failing deterministically even after quota recovers.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `/root/.hermes/profiles/solomon/cron/output/8eaf784e9e97/2026-06-11_11-16-46.md`
+    - `/root/.hermes/profiles/solomon/cron/output/daa7eb7472b0/2026-06-11_11-16-59.md`
+    - `/root/.hermes/profiles/solomon/cron/output/b29471eacca8/2026-06-11_11-17-01.md`
+
+
+## [2026-06-11 11:18:11 UTC]
+- **Performed by:** Solomon (Research Analyst) as part of generic cron job health check for prompt `Regular task`.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json`: 95 jobs total, 93 active/enabled and 2 paused/disabled.
+    - Current latest status distribution is partially improved versus the immediately prior 2026-06-11 11:16 UTC health-log snapshot: error jobs decreased from 91 to 88, while ok jobs increased from 2 to 5.
+    - Dominant latest-error classes remain: 75 jobs with `RuntimeError: HTTP 429: The usage limit has been reached`; 9 jobs with `Script not found: /root/.hermes/profiles/solomon/scripts/echo hello`; 1 job with `Script exited with code 1`; and 3 other missing-script variants.
+    - Nine active duplicate `regular-task` jobs remain enabled on an every-30-minute schedule; 3 prompt `Regular task` jobs now show latest status `ok`, while 6 `regular-task` jobs still show latest HTTP 429 errors.
+    - The current runtime context is `HERMES_SESSION_ID=cron_df9ffcdba309_20260611_111516`; registry entry `df9ffcdba309` remains an active duplicate `regular-task` job whose latest persisted run at 2026-06-11 10:44:25 UTC failed with HTTP 429.
+    - No latest delivery errors were present in the job registry.
+- **Assumptions / Gaps:**:
+    - I did not modify, pause, delete, or reconfigure cron jobs because the generic prompt does not grant remediation scope.
+    - The partial recovery may reflect quota reset/retry success for a subset of duplicates, not a durable fix; exact provider quota state was not independently queried.
+    - The current run's output file is not visible until after this response is persisted by the cron wrapper.
+- **Εκτίμηση:**:
+    There is a small positive delta, but the operational issue remains materially unresolved: duplicate generic jobs still amplify provider usage and noisy every-run deliveries, and most of the cron registry still fails with HTTP 429 or script-path misconfiguration. This run is worth reporting because the `regular-task` family changed from fully failed to partially healthy, but it is not a remediation.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `/root/.hermes/profiles/solomon/cron/output/8eaf784e9e97/2026-06-11_11-16-46.md`
+    - `/root/.hermes/profiles/solomon/cron/output/daa7eb7472b0/2026-06-11_11-16-59.md`
+    - `/root/.hermes/profiles/solomon/cron/output/b29471eacca8/2026-06-11_11-17-01.md`
+    - Local environment variable `HERMES_SESSION_ID=cron_df9ffcdba309_20260611_111516`
+
+
+## [2026-06-11 11:19:39 UTC]
+- **Performed by:** Solomon (Research Analyst) as part of generic cron job health check for prompt `Regular agent job`.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json`: 95 jobs total, 93 active/enabled and 2 paused/disabled.
+    - Current latest active status improved again versus the immediately prior 11:17–11:18 UTC health snapshots: active `error` jobs decreased from 88 to 84, and active `ok` jobs increased from 5 to 9.
+    - Dominant active error class remains provider quota exhaustion: 71 active jobs report `RuntimeError: HTTP 429: The usage limit has been reached`.
+    - Script configuration errors are unchanged: 9 jobs still point to missing script path `/root/.hermes/profiles/solomon/scripts/echo hello`, 3 jobs point to other literal shell-command script paths, and 1 job is an explicit nonzero script failure.
+    - The `regular-task` duplicate family still has 9 active every-30-minute jobs; 7 now show latest status `ok`, while 2 still show latest HTTP 429 failures from 10:44–10:51 UTC.
+    - Latest successful `regular-task` outputs include `/root/.hermes/profiles/solomon/cron/output/df9ffcdba309/2026-06-11_11-17-52.md`, `/root/.hermes/profiles/solomon/cron/output/e833c73442b1/2026-06-11_11-17-52.md`, `/root/.hermes/profiles/solomon/cron/output/cde0ef75cd33/2026-06-11_11-18-10.md`, and `/root/.hermes/profiles/solomon/cron/output/3069ca0fbcef/2026-06-11_11-18-30.md`.
+- **Assumptions / Gaps:**:
+    - I did not modify, pause, delete, or reconfigure cron jobs, credentials, schedules, or model/provider settings.
+    - The HTTP 429 class is interpreted as provider usage-limit exhaustion from local recorded errors; provider account quota was not independently queried.
+    - The improvement looks like transient quota/retry recovery for some duplicate jobs, not proof that the cron setup is healthy.
+- **Εκτίμηση:**:
+    The trend is positive but still not healthy: fewer jobs are failing than a few minutes ago, yet most active jobs still fail, and the same duplicate/test-job plus script-path misconfiguration problems remain. The actionable fix remains scheduler cleanup and deterministic script-field remediation, not more passive retries.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `/root/.hermes/profiles/solomon/cron/output/df9ffcdba309/2026-06-11_11-17-52.md`
+    - `/root/.hermes/profiles/solomon/cron/output/e833c73442b1/2026-06-11_11-17-52.md`
+    - `/root/.hermes/profiles/solomon/cron/output/cde0ef75cd33/2026-06-11_11-18-10.md`
+    - `/root/.hermes/profiles/solomon/cron/output/3069ca0fbcef/2026-06-11_11-18-30.md`
+
+[2026-06-11 11:28:28] Cleanup routine run: found files:
+  /root/.hermes/profiles/solomon/cache/screenshots/browser_screenshot_51d4d522f4fd45d382e2e4c1f50465f1.png
+
+[2026-06-11 11:28:31] Cleanup routine run: found files:
+  /root/.hermes/profiles/solomon/cache/screenshots/browser_screenshot_51d4d522f4fd45d382e2e4c1f50465f1.png
+
+[2026-06-11 11:28:31] Cleanup routine run: found files:
+  /root/.hermes/profiles/solomon/cache/screenshots/browser_screenshot_51d4d522f4fd45d382e2e4c1f50465f1.png
+
+[2026-06-11 11:28:36] Cleanup routine run: found files:
+  /root/.hermes/profiles/solomon/cache/screenshots/browser_screenshot_51d4d522f4fd45d382e2e4c1f50465f1.png
+
+## Backup Thu Jun 11 11:29:37 UTC 2026
+Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_112936.tar.gz
+Size: 67M
+
+## Backup Thu Jun 11 11:29:41 UTC 2026
+Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_112939.tar.gz
+Size: 67M
+
+
+## 2026-06-11 11:30:08 UTC — Explicit backup verification
+- **Performed by:** Solomon (Research Analyst) as explicit backup job.
+- **Facts:**
+  - Pre-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used for `/` and `/root/Documents`.
+  - Executed backup script: `/root/backup_script.sh`.
+  - Script exit code: 0.
+  - Script output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_112936.tar.gz`; `Size: 67M`.
+  - Verified artifact: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_112936.tar.gz`.
+  - Artifact size: 69,815,707 bytes.
+  - SHA256: `21ac3336cd547e24476a410445fffeef97d851ccaf367231adc13b5a42dab673`.
+  - Integrity check: `gzip -t` returned OK; `tar -tzf` listed archive contents successfully.
+  - Post-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used for `/` and `/root/Documents`.
+- **Assumptions / Gaps:**
+  - This verifies a local explicit tarball backup only; it does not confirm off-machine replication.
+  - No destructive cleanup was performed because free disk space was sufficient.
+- **Εκτίμηση:**
+  - Backup is locally valid and usable based on archive existence, exact size, gzip integrity, and tar listing verification.
+
+
+## Explicit backup verification — 2026-06-11 11:30:15 UTC
+- **Performed by:** Solomon (Research Analyst) as explicit backup cron job.
+- **Facts:**
+    - Pre-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used for `/root` and `/root/Documents`; `/root/backups` does not exist.
+    - Executed backup script: `/root/backup_script.sh`.
+    - Script exit code: 0.
+    - Script output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_112939.tar.gz`; `Size: 67M`.
+    - Verified final artifact: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_112939.tar.gz`.
+    - Verified final artifact size: 69,815,709 bytes; mtime `2026-06-11 11:29:40.821612199 +0000`.
+    - Integrity: `gzip -t` passed; `tar -tzf` listed archive entries successfully.
+    - SHA256: `c8c7cd8f36e1ced01e3414a7c2464b750d5b7a1d881db16f0e4d7f81f2cf7eeb`.
+    - Post-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used.
+    - A near-simultaneous prior artifact also exists: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_112936.tar.gz`, 69,815,707 bytes, mtime `2026-06-11T11:29:37.479492+00:00`.
+- **Assumptions / Gaps:**
+    - This verifies a local explicit tarball backup only; it does not prove off-machine replication or GitHub sync.
+    - No destructive cleanup was needed because disk space was clearly adequate.
+    - The near-simultaneous prior artifact is treated as a concurrent/adjacent backup event; the final verified artifact for this run is `obsidian_vault_20260611_112939.tar.gz`.
+- **Εκτίμηση:**
+    - Explicit local backup succeeded and the archive passed basic integrity checks.
+
+## Backup Thu Jun 11 11:30:36 UTC 2026
+Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113035.tar.gz
+Size: 67M
+
+
+### 2026-06-11 11:30:40 UTC — Explicit backup addendum: latest artifact
+- Script/log also produced a second near-identical backup entry in the same run window: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_112939.tar.gz`.
+- Latest artifact verification: size 69,815,709 bytes; SHA256 `c8c7cd8f36e1ced01e3414a7c2464b750d5b7a1d881db16f0e4d7f81f2cf7eeb`; `gzip -t` OK; tar listing succeeded.
+- Disk after latest verification remained `/dev/root` 96G total, 32G used, 65G available, 33% used.
+- Gap remains unchanged: local tarball verification does not prove off-machine replication.
+
+[2026-06-11 11:30:54] Cleanup routine run: found files:
+  /root/.hermes/profiles/solomon/cache/screenshots/browser_screenshot_51d4d522f4fd45d382e2e4c1f50465f1.png
+
+## Backup Thu Jun 11 11:30:56 UTC 2026
+Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113054.tar.gz
+Size: 67M
+
+
+## [2026-06-11 11:31:03 UTC]
+- **Performed by:** Solomon (Research Analyst) during unattended cron run for prompt `Every run job` / current session `cron_bdbc39c9d5e6_20260611_112817`.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json` at registry timestamp `2026-06-11T11:30:43.383181+00:00`.
+    - Registry has 95 jobs total: 93 active/enabled and 2 paused.
+    - Active latest status improved versus the immediately prior 11:18 UTC health snapshot: active errors decreased from 88 to 71, and active ok/no-error jobs increased from 5 to 22.
+    - Dominant latest-error class remains provider quota exhaustion: 58 active jobs report `RuntimeError: HTTP 429: The usage limit has been reached`.
+    - Deterministic script misconfiguration remains unchanged: 9 jobs reference missing script `/root/.hermes/profiles/solomon/scripts/echo hello`, plus three other missing-script variants and one intentionally failing script.
+    - Six active duplicate `every-run-task` jobs remain enabled; all six still have latest status `error` with HTTP 429 and `alert_policy=every_run`.
+    - Current runtime session id maps to registry job `bdbc39c9d5e6` (`db-maintenance`), whose latest registry status is `ok`; this does not change the separate `every-run-task` family status.
+- **Assumptions / Gaps:**:
+    - I did not modify, pause, delete, or reconfigure jobs because this scheduled prompt provides monitoring/reporting scope only.
+    - The HTTP 429s are interpreted from local cron state as provider usage-limit exhaustion; provider dashboard/quota was not independently queried.
+    - Some duplicate jobs may be deliberate test fixtures; retention intent remains unknown.
+- **Εκτίμηση:**:
+    There is a real partial recovery in the global cron registry, but the `every-run-task` family itself is still fully failing and still noisy. The system remains materially unhealthy until duplicate jobs are cleaned up/paused and script fields are corrected.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - Environment: `HERMES_SESSION_ID=cron_bdbc39c9d5e6_20260611_112817`
+    - Prior session-search snapshot at 11:18 UTC reporting 88 active errors / 5 ok
+
+
+### 2026-06-11 11:31:08 UTC — Explicit backup correction: newest observed artifact
+- A newer backup artifact appeared after the previous addendum: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113035.tar.gz`.
+- Newest observed artifact verification: size 69,816,183 bytes; SHA256 `0c1706cfc6f5f25db454096df2a652a8e2576769e3bbb7ad3956480e289d7c02`; `gzip -t` OK; tar listing succeeded.
+- Disk after verification remained `/dev/root` 96G total, 32G used, 65G available, 33% used.
+- Treat this as the newest locally verified explicit tarball in the run window; still no off-machine replication proof.
+
+
+## Backup verification addendum — 2026-06-11 11:30:36 UTC
+- **Performed by:** Solomon (Research Analyst) as explicit scheduled backup job.
+- **Facts:**
+    - Pre-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used.
+    - Executed backup script: `/root/backup_script.sh`.
+    - Script exit code: 0.
+    - Script output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113035.tar.gz`; reported size `67M`.
+    - Verified artifact path: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113035.tar.gz`.
+    - Verified artifact size: `69,816,183` bytes.
+    - Integrity check: `gzip -t` OK; `tar -tzf` listed archive entries successfully.
+    - SHA256: `0c1706cfc6f5f25db454096df2a652a8e2576769e3bbb7ad3956480e289d7c02`.
+    - Post-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used.
+    - Vault git status after logging before next sync: `main...origin/main` with `RESEARCH-LOG.md` modified.
+- **Assumptions / Gaps:**
+    - This verifies a local tarball backup only; it does not prove off-machine/GitHub replication.
+    - Destructive cleanup of old backups was not needed because free disk space was sufficient.
+- **Εκτίμηση:**
+    - Local backup completed and artifact integrity is verified. Remote sync remains a separate process/gap.
+
+[2026-06-11 11:31:11] Cleanup routine run: found files:
+  /root/.hermes/profiles/solomon/cache/screenshots/browser_screenshot_51d4d522f4fd45d382e2e4c1f50465f1.png
+
+
+## 2026-06-11 11:31:15 UTC — Explicit Obsidian backup verification
+- **Performed by:** Solomon (Research Analyst) as explicit backup cron job.
+- **Facts:**
+  - Pre-check disk: `/dev/root` 96G total, 32G used, 65G available, 33% used for `/root` and `/root/Documents`.
+  - Executed backup script: `/root/backup_script.sh`.
+  - Attempt 1: exit code `1`; output included `tar: ./.git: file changed as we read it` and `Backup failed: tar exited with non-zero status`; no new `.tar.gz` artifact found from that attempt.
+  - Retry: exit code `0`; output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113054.tar.gz`; reported size `67M`.
+  - Verified artifact: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113054.tar.gz`.
+  - Exact size: `69,816,427` bytes.
+  - SHA256: `90c05a572fc90807715f346c133d45e6b08775612bd9d1672ef32b709cafabe5`.
+  - Integrity: `gzip -t` returned OK; `tar -tzf` listed archive entries successfully (sample: `./`, `./SOLOMON-SYNC-LOG.md`, `./RESEARCH-LOG.md.backup`).
+  - Post-check disk: `/dev/root` 96G total, 32G used, 65G available, 33% used.
+- **Assumptions / Gaps:**
+  - This verifies a local explicit tarball backup only; it does not confirm off-machine replication or GitHub sync.
+  - No destructive old-backup cleanup was needed because disk space was adequate.
+- **Εκτίμηση:**
+  - Backup is valid after one retry; first failure matches the known transient `.git changed as we read it` tar race.
+
+
+### 2026-06-11 11:31:30 UTC — Backup cron final cross-check
+- Independently re-verified newest observed explicit backup artifact: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113054.tar.gz`.
+- Size: `69,816,427` bytes; SHA256 `90c05a572fc90807715f346c133d45e6b08775612bd9d1672ef32b709cafabe5`; `gzip -t` OK; tar listing succeeded.
+- Note: another concurrent backup run produced this newer artifact after `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113035.tar.gz`. Local tarball integrity is verified; off-machine sync is still not proven by this check.
+
+[2026-06-11 11:32:26] Cleanup routine run: found files:
+  /root/.hermes/profiles/solomon/cache/screenshots/browser_screenshot_51d4d522f4fd45d382e2e4c1f50465f1.png
+
+## Backup Thu Jun 11 11:32:36 UTC 2026
+Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113235.tar.gz
+Size: 67M
+
+## Backup Thu Jun 11 11:32:42 UTC 2026
+Backed up Obsidian vault to /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113241.tar.gz
+Size: 67M
+
+[2026-06-11 11:32:45] Cleanup routine run: found files:
+  /root/.hermes/profiles/solomon/cache/screenshots/browser_screenshot_51d4d522f4fd45d382e2e4c1f50465f1.png
+
+
+## [2026-06-11 11:32:52 UTC]
+- **Performed by:** Solomon (Research Analyst) during unattended cron run for prompt `Errors only job`.
+- **Facts:**:
+    - Parsed `/root/.hermes/profiles/solomon/cron/jobs.json` after the 11:31 UTC cron wave.
+    - Registry has 95 jobs total: 93 active/enabled and 2 paused.
+    - Active latest-error surface improved versus the 11:31:03 UTC log snapshot: active error jobs decreased from 71 to 59, and active ok/no-error jobs increased from 22 to 34.
+    - Dominant remaining error class is still provider usage-limit/rate-limit: 46 active jobs show `RuntimeError: HTTP 429: The usage limit has been reached` or equivalent HTTP 429 wording.
+    - Script/test failures remain: 9 jobs reference missing script `/root/.hermes/profiles/solomon/scripts/echo hello`; 3 other jobs reference missing script paths; 1 job has an intentional/non-zero script exit.
+    - The `errors-only-task` duplicate family has 6 active jobs: ok/no-error `3e8f566e6175` and still-error `ee869eef12d3, 255029ddc6f8, b349f52baf55, 6ffe92f6009f, 3524dd58da36`.
+    - Current runtime environment exposes `HERMES_SESSION_ID=cron_bdbc39c9d5e6_20260611_112817`; the registry maps that id to `db-maintenance`, so the environment id does not match the human prompt shown for this cron invocation.
+- **Assumptions / Gaps:**:
+    - I did not modify, pause, delete, or reconfigure cron jobs because this job is reporting-only.
+    - The HTTP 429 class is inferred from local cron error strings; provider dashboard/quota was not queried.
+    - Some duplicate jobs may be deliberate test fixtures; retention intent remains unknown.
+- **Εκτίμηση:**:
+    This is a material partial recovery, not a clean bill of health. The registry improved by 12 fewer active error jobs since the immediately prior operational snapshot, and one `errors-only-task` duplicate is now ok, but the system remains noisy/unhealthy because 59 active jobs still show latest errors, mostly HTTP 429s amplified by duplicate scheduled jobs.
+- **Πηγές:**:
+    - `/root/.hermes/profiles/solomon/cron/jobs.json`
+    - `/root/.hermes/profiles/solomon/cron/output/3e8f566e6175/2026-06-11_11-30-58.md`
+    - `/root/.hermes/profiles/solomon/cron/output/ee869eef12d3/2026-06-11_10-30-48.md`
+    - `/root/.hermes/profiles/solomon/cron/output/255029ddc6f8/2026-06-11_10-34-26.md`
+
+
+## Backup verification addendum — 2026-06-11 11:33:00 UTC
+- **Performed by:** Solomon (Research Analyst) as explicit scheduled backup job.
+- **Facts:**
+    - Pre-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used.
+    - Executed backup script: `/root/backup_script.sh`.
+    - Script exit code: `0`.
+    - Script output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113241.tar.gz`; reported size `67M`.
+    - Newest verified artifact at final check: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113241.tar.gz`.
+    - Verified artifact size: `69,817,498` bytes.
+    - Integrity: `gzip -t` OK; `tar -tzf` listed archive entries successfully.
+    - SHA256: `782be0b872f9204e5f6aa887a54edac60befb1200847f39a4ce1b7794fe13bab`.
+    - Post-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used.
+- **Assumptions / Gaps:**
+    - This verifies a local explicit tarball backup only; it does not confirm off-machine/GitHub replication.
+    - Destructive cleanup of old backups was not needed because free disk space was sufficient.
+- **Εκτίμηση:**
+    - Local backup completed successfully and the latest observed tarball integrity is verified.
+
+
+## Explicit backup verification — 2026-06-11 11:32:55 UTC
+- **Performed by:** Solomon (Research Analyst) as explicit scheduled backup job.
+- **Facts:**
+  - Pre-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used for `/root` and `/root/Documents`.
+  - Executed backup script: `/root/backup_script.sh`; script exit code: `0`.
+  - Script output: `Backup successful: /root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113235.tar.gz`; reported size `67M`.
+  - Final cross-check found a newer near-simultaneous artifact in the same run window: `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113241.tar.gz`.
+  - Verified final artifact size: `69,817,498` bytes; mtime `2026-06-11 11:32:42.530132742 +0000`.
+  - Integrity: `gzip -t` OK; `tar -tzf` listed `406` archive entries successfully.
+  - SHA256: `782be0b872f9204e5f6aa887a54edac60befb1200847f39a4ce1b7794fe13bab`.
+  - Post-check disk status: `/dev/root` 96G total, 32G used, 65G available, 33% used.
+- **Assumptions / Gaps:**
+  - This verifies a local explicit tarball backup only; it does not prove off-machine/GitHub replication.
+  - No destructive old-backup cleanup was needed because free disk space was clearly sufficient.
+  - Near-simultaneous artifact `/root/Documents/ObsidianVault/backups/obsidian_vault_20260611_113235.tar.gz` was produced by the invoked script; the final reported artifact is the newest verified tarball observed after the run.
+- **Εκτίμηση:**
+  - Local backup completed successfully and the newest observed archive passed independent integrity checks.
