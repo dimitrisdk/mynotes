@@ -146,6 +146,48 @@ If a manual note appears to request a structured correction, the sync process mu
 - Status: active
 <!-- wellness:source:mcp:weight:1:end -->
 
+### 2026-06-08
+
+<!-- wellness:daily:2026-06-08:start -->
+- Training: bjj.
+<!-- wellness:daily:2026-06-08:end -->
+
+<!-- wellness:source:mcp:training:14:start -->
+- Event type: training
+- Daily key: 2026-06-08
+- Source: dashboard / mcp training log
+- Activities: BJJ session
+- Status: active
+<!-- wellness:source:mcp:training:14:end -->
+
+### 2026-06-09
+
+<!-- wellness:daily:2026-06-09:start -->
+- Training: yoga.
+<!-- wellness:daily:2026-06-09:end -->
+
+<!-- wellness:source:mcp:training:15:start -->
+- Event type: training
+- Daily key: 2026-06-09
+- Source: dashboard / mcp training log
+- Activities: Yoga session
+- Status: active
+<!-- wellness:source:mcp:training:15:end -->
+
+### 2026-06-10
+
+<!-- wellness:daily:2026-06-10:start -->
+- Training: gym.
+<!-- wellness:daily:2026-06-10:end -->
+
+<!-- wellness:source:mcp:training:16:start -->
+- Event type: training
+- Daily key: 2026-06-10
+- Source: dashboard / mcp training log
+- Activities: Gym session
+- Status: active
+<!-- wellness:source:mcp:training:16:end -->
+
 ## Manual notes
 
 
