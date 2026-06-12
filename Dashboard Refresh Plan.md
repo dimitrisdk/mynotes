@@ -67,6 +67,8 @@ Make the dashboard feel current and useful from the first screen, without overbu
    - show latest research cards: date, topic, status, linked Obsidian note, source count/tags if available
    - first linked research: `[[Research/2026-06-03-top-github-repos-build-integration]]`
    - no fake research cards; use markdown-backed real entries until API parser exists
+   - implementation detail from kanban `t_7baa6b3e`: Research tab is hidden until the user selects the daily task; search box accessible label must be `ρώτα τον Solomon`; include watchlists AI, Hermes, UX, ETFs, BJJ; artifact `/root/.hermes/kanban/workspaces/t_7baa6b3e/research-tab-data-interaction-spec.md`
+   - `ρώτα τον Solomon` interaction from kanban `t_52d2890f`: staged Q&A-over-sources over `RESEARCH-LOG.md` + `Research/*.md` first; Greek by default; answer only from retrieved evidence; cite sources; show empty/partial/no-evidence states; artifact `/root/.hermes/kanban/workspaces/t_52d2890f/solomon-search-interaction-spec.md`
 
 ## Shortcuts to add
 

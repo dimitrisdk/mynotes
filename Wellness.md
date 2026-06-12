@@ -146,6 +146,48 @@ If a manual note appears to request a structured correction, the sync process mu
 - Status: active
 <!-- wellness:source:mcp:weight:1:end -->
 
+### 2026-06-08
+
+<!-- wellness:daily:2026-06-08:start -->
+- Training: bjj.
+<!-- wellness:daily:2026-06-08:end -->
+
+<!-- wellness:source:mcp:training:14:start -->
+- Event type: training
+- Daily key: 2026-06-08
+- Source: dashboard / mcp training log
+- Activities: BJJ session
+- Status: active
+<!-- wellness:source:mcp:training:14:end -->
+
+### 2026-06-09
+
+<!-- wellness:daily:2026-06-09:start -->
+- Training: yoga.
+<!-- wellness:daily:2026-06-09:end -->
+
+<!-- wellness:source:mcp:training:15:start -->
+- Event type: training
+- Daily key: 2026-06-09
+- Source: dashboard / mcp training log
+- Activities: Yoga session
+- Status: active
+<!-- wellness:source:mcp:training:15:end -->
+
+### 2026-06-10
+
+<!-- wellness:daily:2026-06-10:start -->
+- Training: gym.
+<!-- wellness:daily:2026-06-10:end -->
+
+<!-- wellness:source:mcp:training:16:start -->
+- Event type: training
+- Daily key: 2026-06-10
+- Source: dashboard / mcp training log
+- Activities: Gym session
+- Status: active
+<!-- wellness:source:mcp:training:16:end -->
+
 ## Manual notes
 
 
@@ -157,3 +199,6 @@ Manual notes below are preserved by sync and are not canonical structured record
 - Day 2 - 2026-06-01 10:13: Started workout; weight 81.8kg; Lat Pulldown 52kg | DB Row 20kg | Pullover 18kg | Seated Row 45kg.
 - 2026-06-02 note: BJJ session completed; meals included chicken biftekia + salad + pita and half a Ninja Creami protein ice cream; good training day; no more food today; keep hydration high; latest tracked weight 81.8kg.
 - 2026-06-03 supplement/order note: Protein powder order placed: 2x Immortal Whey Protein 2kg bundle (total 4kg), flavors Chocolate Peanut Butter + Raspberry Cheesecake, total €99.90, status processing. Personal delivery/contact details intentionally not logged here.
+- 2026-06-04 note: BJJ session completed.
+- 2026-06-04 food note: omeleta me 4 auga, miso doxio cottage, kai vradino ena santoutsi vromiko me xirino, xoris patates.
+- 2026-06-05 food note: klasiki omeleta me salata, kai ena boll pagoto me gala kai skoni proteini.

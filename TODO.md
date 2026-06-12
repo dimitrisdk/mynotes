@@ -1,32 +1,32 @@
 # 📋 Εκκρεμότητες — Προς διεκπεραίωση
 
 ## 🛍️ Ψώνια
+- [ ] Αγορά GPS tracker
 
 ## 💰 Οικονομικά
-- [ ] Τράβηγμα λεφτών από Mintos
+- [x] Τράβηγμα λεφτών από Mintos — ✅ ολοκληρώθηκε
 - [ ] 2027-06-03: Google One / Google Drive 200GB renewal review — last paid €29.99 on 2026-06-03; decide renew/cancel.
 
 ## 🏥 Ιατρικά ραντεβού
-- [ ] Κλείσιμο ραντεβού με **γαστρεντερολόγο**
-- [ ] 2026-06-08 19:00: Ραντεβού με **οφθαλμίατρο** — Βλάχος Βασίλειος / BIO ORASIS EE, Εθνικής Αντιστάσεως 196, Περιστέρι, τηλ. 2121059049. Προστέθηκε στο Google Calendar.
-- [ ] Επίσκεψη σε γιατρό για συνταγογράφηση Farpo KOMO 💊
+- [x] Κλείσιμο ραντεβού με **γαστρεντερολόγο** — ✅ ολοκληρώθηκε
+- [x] 2026-06-08 19:00: Ραντεβού με **οφθαλμίατρο** — ✅ ολοκληρώθηκε
+- [x] Επίσκεψη σε γιατρό για συνταγογράφηση Farpo KOMO 💊 — ✅ ολοκληρώθηκε
 
 ## 🤖 Executive Team — Telegram Bots
 - [x] Φτιάξω 3 bots στο @BotFather (Petros, Ioudas, Samson)
 - [x] Δώσω tokens στην Panagia να τα εγκαταστήσει
 
+## 💳 Πληρωμές / Εξόφληση
+- [ ] ⏰ **Reminder** — Πληρωμή για μηχανή/συσκευή (kanban: t_rem_mixanaki) — *προσθέσε ημ/νία λήξης & ποσό/ληφθείς*
+
 ## 🏠 Home Assistant
 - [ ] 2026-06-04: Βελτίωση HA Dashboard — Quick Actions, Rooms layout, Night Mode, μεγάλα mobile buttons, status cards για lights/switches/vacuum/security.
 - [ ] 2026-06-05: Εξέταση automation — όταν μπαίνω με το κινητό στο Wi‑Fi, να ανάβουν συγκεκριμένα φώτα.
 
+## 🎸 Μουσική / Χόμπι
+- [ ] Ξορδεύω τη guitarra — βάζω τις χορδές
+
 ## 🧰 Dashboard / Agent Infrastructure
 - [ ] Προσθήκη dashboard delete/update tools για meals/training entries
-- [ ] Macro auto-estimator να χρησιμοποιεί υπάρχον working provider αντί για Anthropic-only
-- [ ] Samson ↔ Dashboard sync: όταν γράφει Wellness.md να ενημερώνεται και το dashboard
 - [ ] Ενιαίο source of truth Obsidian ↔ dashboard για fitness/food/training
 - [ ] Σταδιακή σύνδεση έξτρα PA permissions/integrations όπου χρειάζεται
-- [ ] Προσθήκη νέου dashboard tab **Researches** που διαβάζει `RESEARCH-LOG.md` + `Research/` notes και δείχνει real research cards
-- [ ] Dashboard Researches MVP: σύνδεση πρώτης έρευνας `[[Research/2026-06-03-top-github-repos-build-integration]]`
-- [ ] GitHub repo integration pilot: Playwright smoke tests για dashboard + Researches tab
-- [ ] GitHub repo integration pilot: Langfuse tracing σε ένα agent workflow πριν εμφανιστούν usage/token metrics
-- [ ] Firecrawl-backed research workflow hardening για Solomon, με αποθήκευση sources στα Obsidian research notes
