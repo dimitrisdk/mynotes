@@ -238,11 +238,25 @@ If a manual note appears to request a structured correction, the sync process mu
 - Status: active
 <!-- wellness:source:hermes-hq:food:2026-06-15:end -->
 
+<!-- wellness:source:hermes-hq:food:2026-06-15:snack-18:start -->
+- Event type: food
+- Daily key: 2026-06-15
+- Source: Hermes HQ Fitness tracker
+- Occurred/created: 2026-06-15T18:00:35Z
+- Meal: 1 scoop whey protein (~30g) + 200g homemade protein ice cream (whey, milk, banana)
+- Calories: 380 kcal
+- Protein: 55g
+- Carbs: 25g
+- Fat: 6g
+- Note: Estimated macros for whey scoop + protein ice cream
+- Status: active
+<!-- wellness:source:hermes-hq:food:2026-06-15:snack-18:end -->
+
 <!-- wellness:daily:2026-06-15:updated-start -->
 - Weight: 81.5kg.
-- Food totals: 455 kcal, 59g protein, 41g carbs, 5g fat.
+- Food totals: 835 kcal, 114g protein, 66g carbs, 11g fat.
 - Goals: 2200 kcal, 170g protein, 220g carbs, 70g fat.
-- Remaining: 1745 kcal, 111g protein, 179g carbs, 65g fat.
+- Remaining: 1365 kcal, 56g protein, 154g carbs, 59g fat.
 <!-- wellness:daily:2026-06-15:updated-end -->
 
 ## Manual notes
