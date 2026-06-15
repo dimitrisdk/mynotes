@@ -224,6 +224,27 @@ If a manual note appears to request a structured correction, the sync process mu
 - Status: active
 <!-- wellness:source:hermes-hq:weight:2026-06-15:end -->
 
+<!-- wellness:source:hermes-hq:food:2026-06-15:start -->
+- Event type: food
+- Daily key: 2026-06-15
+- Source: Hermes HQ Fitness tracker
+- Occurred/created: 2026-06-15T12:05:33Z
+- Meal: Tortilla wrap with 185g tuna in water, whole wheat tortilla, arugula, yogurt, mustard, sriracha
+- Calories: 455 kcal
+- Protein: 59g
+- Carbs: 41g
+- Fat: 5g
+- Note: Strict tracking, cooked weights
+- Status: active
+<!-- wellness:source:hermes-hq:food:2026-06-15:end -->
+
+<!-- wellness:daily:2026-06-15:updated-start -->
+- Weight: 81.5kg.
+- Food totals: 455 kcal, 59g protein, 41g carbs, 5g fat.
+- Goals: 2200 kcal, 170g protein, 220g carbs, 70g fat.
+- Remaining: 1745 kcal, 111g protein, 179g carbs, 65g fat.
+<!-- wellness:daily:2026-06-15:updated-end -->
+
 ## Manual notes
 
 
