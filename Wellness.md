@@ -79,6 +79,26 @@ If a manual note appears to request a structured correction, the sync process mu
 
 ## Dashboard projection
 
+### 2026-06-15
+<!-- wellness:daily:2026-06-15:start -->
+- Weight: 81.5kg.
+- Goals: 2200 kcal, 170g protein, 220g carbs, 70g fat.
+- Target: 78.5kg by 2026-07-15 for fat loss.
+<!-- wellness:daily:2026-06-15:end -->
+
+<!-- wellness:source:hermes-hq:fitness-profile:2026-06-15:start -->
+- Event type: note
+- Daily key: 2026-06-15
+- Source: Hermes HQ Fitness profile
+- Profile: male, 39 years, 170cm, 81.5kg
+- Activity: 3x BJJ, 1x yoga, 2-3x gym per week
+- Tracking: strict, cooked weights
+- Estimated BMR/TDEE: 1688 / 3000 kcal
+- Daily goals: 2200 kcal, 170g protein, 220g carbs, 70g fat
+- Planned deficit: ~800 kcal/day
+- Status: active
+<!-- wellness:source:hermes-hq:fitness-profile:2026-06-15:end -->
+
 ### 2026-06-03
 
 <!-- wellness:daily:2026-06-03:start -->
