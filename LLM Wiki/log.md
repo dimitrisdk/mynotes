@@ -13,3 +13,8 @@
 - Created entity page for Hermes Agent.
 - Created comparison page for Hermes Memory vs LLM Wiki.
 - Created query page describing Dimitris's practical workflow.
+
+## [2026-06-29] ingest | BJJ Side Control Reversal Short
+- Added raw source: `raw/videos/bjj-side-control-reversal-25XNAtZdM7g.md`.
+- Created concept page: `concepts/bjj-side-control-escapes.md`.
+- Linked HQ YouTube vault item `25XNAtZdM7g` to category `bjj/side-control-escapes`.

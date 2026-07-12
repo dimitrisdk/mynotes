@@ -1,12 +1,13 @@
 # LLM Wiki Index
 
 > Content catalog for Dimitris's Hermes/Obsidian self-improving knowledge base.  
-> Last updated: 2026-06-14 | Total pages: 6
+> Last updated: 2026-06-29 | Total pages: 8
 
 ## Entities
 - [[entities/hermes-agent|Hermes Agent]] — Dimitris's central VPS-based AI assistant and automation layer.
 
 ## Concepts
+- [[concepts/bjj-side-control-escapes|BJJ Side Control Escapes & Reversals]] — Technique bucket for bottom side-control escapes, frames, reversals, and wrestle-ups.
 - [[concepts/hermes-memory|Hermes Memory]] — Built-in durable memory/user profile layer for personal context.
 - [[concepts/llm-wiki|LLM Wiki]] — External markdown knowledge base that compounds from sources.
 - [[concepts/self-improving-knowledge-base|Self-Improving Knowledge Base]] — Workflow where new sources update linked notes instead of staying isolated.
@@ -18,4 +19,5 @@
 - [[queries/how-dimitris-will-use-hermes-llm-wiki|How Dimitris Will Use Hermes LLM Wiki]] — Practical workflow for adding sources and querying the wiki.
 
 ## Raw Sources
+- [[raw/videos/bjj-side-control-reversal-25XNAtZdM7g|YouTube Short: BJJ Side Control Reversal]]
 - [[raw/videos/hermes-knowledge-base-self-improves-2026-06-14|YouTube transcript: Build a Hermes Knowledge Base That Self-Improves]]

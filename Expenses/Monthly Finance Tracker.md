@@ -51,6 +51,7 @@ Status guidance:
 | :--- | :--- | :--- | ---: | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-06-03 | 2026-06 | Protein powder order | 99.90 | EUR | Expense | Wellness / Supplements | Card / bank app unknown | Initial tracked expense; source was June wallet screenshot | Wallet screenshot / pending |
 | 2026-06-03 | 2026-06 | ETF investment contribution | 1300.00 | EUR | Investment | ETF Investment | Broker unknown | Initial tracked investment; specific ETF/account not yet confirmed | Manual note from user / manual |
+| 2026-06-20 | 2026-06 | HQ test expense | 1.23 | EUR | Expense | Other Expense | test account | Temporary test row for expense tool verification | Manual / test |
 
 ## Intake flow for future messages to Ioudas
 

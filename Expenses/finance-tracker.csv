@@ -8,3 +8,4 @@ date,month,description,amount,currency,type,category_or_asset,account,notes,sour
 2026-06-04,2026-06,PEANUTS EGALEO,13.32,EUR,Expense,Food / Snacks,payzy Visa Debit Virtual,Google Wallet notification at 15:03,Google Wallet / recorded
 2026-06-04,2026-06,AB_AIGALEO,57.13,EUR,Expense,Groceries / Supermarket,payzy Visa Debit Virtual,Google Wallet notification at 15:03,Google Wallet / recorded
 2026-06-04,2026-06,Motokouzi - beers,10.00,EUR,Expense,Food / Drinks,Unknown,Manual user entry: xtes exodo biires motokouzi 10 euro,Manual / recorded
+2026-06-20,2026-06,HQ test expense,1.23,EUR,Expense,Other Expense,test account,Temporary test row for expense tool verification,Manual / test

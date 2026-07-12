@@ -259,6 +259,24 @@ If a manual note appears to request a structured correction, the sync process mu
 - Remaining: 1365 kcal, 56g protein, 154g carbs, 59g fat.
 <!-- wellness:daily:2026-06-15:updated-end -->
 
+### 2026-06-29
+
+<!-- wellness:daily:2026-06-29:start -->
+- Weight: 78.9kg.
+- Goal: 78.5kg by 2026-07-15.
+- Remaining to target: 0.4kg.
+<!-- wellness:daily:2026-06-29:end -->
+
+<!-- wellness:source:hermes-hq:weight:2026-06-29:start -->
+- Event type: weight
+- Daily key: 2026-06-29
+- Source: Hermes HQ Fitness tracker
+- Occurred/created: 2026-06-29T11:39:54Z
+- Weight: 78.9kg
+- Note: Manual Telegram entry from Dimitris
+- Status: active
+<!-- wellness:source:hermes-hq:weight:2026-06-29:end -->
+
 ## Manual notes
 
 
