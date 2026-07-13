@@ -281,8 +281,9 @@ If a manual note appears to request a structured correction, the sync process mu
 
 <!-- wellness:daily:2026-07-13:start -->
 - Weight: 80.1kg.
-- Goal: 78.5kg by 2026-07-15.
-- Difference to target: 1.6kg.
+- Current target: 77.0kg.
+- Difference to target: 3.1kg.
+- Target date: not set.
 <!-- wellness:daily:2026-07-13:end -->
 
 <!-- wellness:source:hermes-hq:weight:2026-07-13:start -->
