@@ -277,6 +277,24 @@ If a manual note appears to request a structured correction, the sync process mu
 - Status: active
 <!-- wellness:source:hermes-hq:weight:2026-06-29:end -->
 
+### 2026-07-13
+
+<!-- wellness:daily:2026-07-13:start -->
+- Weight: 80.1kg.
+- Goal: 78.5kg by 2026-07-15.
+- Difference to target: 1.6kg.
+<!-- wellness:daily:2026-07-13:end -->
+
+<!-- wellness:source:hermes-hq:weight:2026-07-13:start -->
+- Event type: weight
+- Daily key: 2026-07-13
+- Source: Hermes HQ Fitness tracker
+- Occurred/created: 2026-07-13T07:35:15Z
+- Weight: 80.1kg
+- Note: Manual Telegram entry
+- Status: active
+<!-- wellness:source:hermes-hq:weight:2026-07-13:end -->
+
 ## Manual notes
 
 
